@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>tryhackme - Tag - Arcvjs&#39;s blog</title>
+        <link>https://arcvjs.github.io/tags/tryhackme/</link>
+        <description>tryhackme - Tag - Arcvjs&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 04 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/tryhackme/" rel="self" type="application/rss+xml" /><item>
+    <title>Red Team Recon Writeups</title>
+    <link>https://arcvjs.github.io/posts/tryhackme/red-team-recon/</link>
+    <pubDate>Thu, 04 Aug 2022 00:00:00 &#43;0000</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/tryhackme/red-team-recon/</guid>
+    <description><![CDATA[This is a writeup for the room Red Team Recon on tryhackme here Built-in Tools When was thmredteam.com created (registered)? (YYYY-MM-DD)
+2021-09-24, got from whois. To how many IPv4 addresses does clinic.thmredteam.com resolve?
+2, got from dig. To how many IPv6 addresses does clinic.thmredteam.com resolve?
+2, got from dig with -6 flag. Advanced Searching How would you search using Google for xls indexed for http://clinic.thmredteam.com?
+filetype:xls site:clinic.thmredteam.com How would you search using Google for files with the word passwords for http://clinic.]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Red Team Recon Writeups - Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:title" content="Red Team Recon Writeups" />
+<meta property="og:description" content="This is a writeup for the room Red Team Recon on tryhackme here Built-in Tools When was thmredteam.com created (registered)? (YYYY-MM-DD)
+2021-09-24, got from whois. To how many IPv4 addresses does clinic.thmredteam.com resolve?
+2, got from dig. To how many IPv6 addresses does clinic.thmredteam.com resolve?
+2, got from dig with -6 flag. Advanced Searching How would you search using Google for xls indexed for http://clinic.thmredteam.com?
+filetype:xls site:clinic.thmredteam.com How would you search using Google for files with the word passwords for http://clinic." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://arcvjs.github.io/posts/tryhackme/red-team-recon/" />
+<meta property="article:published_time" content="2022-08-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-08-04T00:00:00+00:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Red Team Recon Writeups"/>
+<meta name="twitter:description" content="This is a writeup for the room Red Team Recon on tryhackme here Built-in Tools When was thmredteam.com created (registered)? (YYYY-MM-DD)
+2021-09-24, got from whois. To how many IPv4 addresses does clinic.thmredteam.com resolve?
+2, got from dig. To how many IPv6 addresses does clinic.thmredteam.com resolve?
+2, got from dig with -6 flag. Advanced Searching How would you search using Google for xls indexed for http://clinic.thmredteam.com?
+filetype:xls site:clinic.thmredteam.com How would you search using Google for files with the word passwords for http://clinic."/>
+<meta name="application-name" content="Arcvjs&#39;s blog">
+<meta name="apple-mobile-web-app-title" content="Arcvjs&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://arcvjs.github.io/posts/tryhackme/red-team-recon/" /><link rel="prev" href="https://arcvjs.github.io/posts/first-blog/" /><link rel="next" href="https://arcvjs.github.io/posts/ctf/corctf2022/jsonquiz/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Red Team Recon Writeups",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/arcvjs.github.io\/posts\/tryhackme\/red-team-recon\/"
+        },"genre": "posts","keywords": "tryhackme, DNS","wordcount":  201 ,
+        "url": "https:\/\/arcvjs.github.io\/posts\/tryhackme\/red-team-recon\/","datePublished": "2022-08-04T00:00:00+00:00","dateModified": "2022-08-04T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "James S"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Arcvjs&#39;s blog">Home</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about">About Me </a><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="search" id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Arcvjs&#39;s blog">Home</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="search" id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/about" title="">AboutMe</a><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Red Team Recon Writeups</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-04">2022-08-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;201 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#this-is-a-writeup-for-the-room-red-team-recon-on-tryhackme-herehttpstryhackmecomroomredteamrecon">This is a writeup for the room Red Team Recon on tryhackme <a href="https://tryhackme.com/room/redteamrecon">here</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#built-in-tools">Built-in Tools</a></li>
+    <li><a href="#advanced-searching">Advanced Searching</a></li>
+    <li><a href="#specialized-search-engines">Specialized Search Engines</a></li>
+    <li><a href="#recon-ng">Recon-ng</a></li>
+    <li><a href="#maltego">Maltego</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="this-is-a-writeup-for-the-room-red-team-recon-on-tryhackme-herehttpstryhackmecomroomredteamrecon">This is a writeup for the room Red Team Recon on tryhackme <a href="https://tryhackme.com/room/redteamrecon" target="_blank" rel="noopener noreffer ">here</a></h3>
+<h2 id="built-in-tools">Built-in Tools</h2>
+<p>When was thmredteam.com created (registered)? (YYYY-MM-DD)</p>
+<pre><code>2021-09-24, got from whois.
+</code></pre><p>To how many IPv4 addresses does clinic.thmredteam.com resolve?</p>
+<pre><code>2, got from dig.
+</code></pre><p>To how many IPv6 addresses does clinic.thmredteam.com resolve?</p>
+<pre><code>2, got from dig with -6 flag.
+</code></pre><h2 id="advanced-searching">Advanced Searching</h2>
+<p>How would you search using Google for xls indexed for <a href="http://clinic.thmredteam.com?">http://clinic.thmredteam.com?</a></p>
+<pre><code>filetype:xls site:clinic.thmredteam.com
+</code></pre><p>How would you search using Google for files with the word passwords for <a href="http://clinic.thmredteam.com?">http://clinic.thmredteam.com?</a></p>
+<pre><code>passwords site:clinic.thmredteam.com
+</code></pre><h2 id="specialized-search-engines">Specialized Search Engines</h2>
+<p>What is the shodan command to get your Internet-facing IP address?</p>
+<pre><code>shodan myip
+</code></pre><h2 id="recon-ng">Recon-ng</h2>
+<p>How do you start recon-ng with the workspace clinicredteam?</p>
+<pre><code>recon-ng -w clinicredteam
+</code></pre><p>How many modules with the name virustotal exist?</p>
+<pre><code>2, got from marketplace search virustotal
+</code></pre><p>There is a single module under hosts-domains. What is its name?</p>
+<pre><code>migrate_hosts, got from marketplace search hosts-domains.
+</code></pre><p>censys_email_address is a module that “retrieves email addresses from the TLS certificates for a company.” Who is the author?</p>
+<pre><code>Censys Team got from marketplace info censsys_email_addressses
+</code></pre><h2 id="maltego">Maltego</h2>
+<p>What is the name of the transform that queries NIST’s National Vulnerability Database?</p>
+<pre><code>NIST NVD
+</code></pre><p>What is the name of the project that offers a transform based on ATT&amp;CK?</p>
+<pre><code>MISP project
+</code></pre></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-08-04</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://arcvjs.github.io/posts/tryhackme/red-team-recon/" data-title="Red Team Recon Writeups" data-hashtags="tryhackme,DNS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://arcvjs.github.io/posts/tryhackme/red-team-recon/" data-title="Red Team Recon Writeups"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://arcvjs.github.io/posts/tryhackme/red-team-recon/" data-title="Red Team Recon Writeups"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/tryhackme/">tryhackme</a>,&nbsp;<a href="/tags/dns/">DNS</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/first-blog/" class="prev" rel="prev" title="First Blog"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>First Blog</a>
+            <a href="/posts/ctf/corctf2022/jsonquiz/" class="next" rel="next" title="Jsonquiz CorCTF 2022 writeups">Jsonquiz CorCTF 2022 writeups<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"search":{"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

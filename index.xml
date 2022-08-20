@@ -1,0 +1,55 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Arcvjs&#39;s blog</title>
+        <link>https://arcvjs.github.io/</link>
+        <description>blogs, others</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 20 Aug 2022 11:08:49 &#43;0700</lastBuildDate>
+            <atom:link href="https://arcvjs.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Tadpole</title>
+    <link>https://arcvjs.github.io/posts/ctf/corctf2022/tadpole/</link>
+    <pubDate>Sat, 06 Aug 2022 13:18:38 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/ctf/corctf2022/tadpole/</guid>
+    <description><![CDATA[Tadpole corctf 2022 writeups we were given two files
+file 1: tadpole.py
+from Crypto.Util.number import bytes_to_long, isPrime from secrets import randbelow p = bytes_to_long(open(&quot;flag.txt&quot;, &quot;rb&quot;).read()) assert isPrime(p) a = randbelow(p) b = randbelow(p) def f(s): return (a * s + b) % p print(&quot;a = &quot;, a) print(&quot;b = &quot;, b) print(&quot;f(31337) = &quot;, f(31337)) print(&quot;f(f(31337)) = &quot;, f(f(31337))) file 2: output.txt
+a = 7904681699700731398014734140051852539595806699214201704996640156917030632322659247608208994194840235514587046537148300460058962186080655943804500265088604049870276334033409850015651340974377752209566343260236095126079946537115705967909011471361527517536608234561184232228641232031445095605905800675590040729 b = 16276123569406561065481657801212560821090379741833362117064628294630146690975007397274564762071994252430611109538448562330994891595998956302505598671868738461167036849263008183930906881997588494441620076078667417828837239330797541019054284027314592321358909551790371565447129285494856611848340083448507929914 f(31337) = 52926479498929750044944450970022719277159248911867759992013481774911823190312079157541825423250020665153531167070545276398175787563829542933394906173782217836783565154742242903537987641141610732290449825336292689379131350316072955262065808081711030055841841406454441280215520187695501682433223390854051207100 f(f(31337)) = 65547980822717919074991147621216627925232640728803041128894527143789172030203362875900831296779973655308791371486165705460914922484808659375299900737148358509883361622225046840011907835671004704947767016613458301891561318029714351016012481309583866288472491239769813776978841785764693181622804797533665463949 Understanding tadpole.]]></description>
+</item>
+<item>
+    <title>Jsonquiz CorCTF 2022 writeups</title>
+    <link>https://arcvjs.github.io/posts/ctf/corctf2022/jsonquiz/</link>
+    <pubDate>Sat, 06 Aug 2022 11:07:52 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/ctf/corctf2022/jsonquiz/</guid>
+    <description><![CDATA[Jsonquiz CorCTF 2022 writeups We were given the link jsonquiz.be.ax.
+I googled the questions and found that they are the same as in https://quizack.com/json/questions-and-answers .
+Just searched the page for the answer.
+I opened the network inspect tool just in case.
+After i answered question 15, there was a post request with payload &ldquo;score=0&rdquo;
+I copied the request as cUrl
+ curl &lsquo;https://jsonquiz.be.ax/submit' -X POST &ndash;data-raw &lsquo;score=0&rsquo;
+ change it to:]]></description>
+</item>
+<item>
+    <title>Red Team Recon Writeups</title>
+    <link>https://arcvjs.github.io/posts/tryhackme/red-team-recon/</link>
+    <pubDate>Thu, 04 Aug 2022 00:00:00 &#43;0000</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/tryhackme/red-team-recon/</guid>
+    <description><![CDATA[This is a writeup for the room Red Team Recon on tryhackme here Built-in Tools When was thmredteam.com created (registered)? (YYYY-MM-DD)
+2021-09-24, got from whois. To how many IPv4 addresses does clinic.thmredteam.com resolve?
+2, got from dig. To how many IPv6 addresses does clinic.thmredteam.com resolve?
+2, got from dig with -6 flag. Advanced Searching How would you search using Google for xls indexed for http://clinic.thmredteam.com?
+filetype:xls site:clinic.thmredteam.com How would you search using Google for files with the word passwords for http://clinic.]]></description>
+</item>
+<item>
+    <title>First Blog</title>
+    <link>https://arcvjs.github.io/posts/first-blog/</link>
+    <pubDate>Thu, 28 Jul 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://arcvjs.github.io/posts/first-blog/</guid>
+    <description><![CDATA[Welcome, to my blog. This blog will be used for writeups and many more. I&rsquo;m using this for personal documentation. Enjoy.]]></description>
+</item>
+</channel>
+</rss>
