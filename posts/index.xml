@@ -20,7 +20,7 @@ a = 7904681699700731398014734140051852539595806699214201704996640156917030632322
     <pubDate>Sat, 06 Aug 2022 11:07:52 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/ctf/corctf2022/jsonquiz/</guid>
-    <description><![CDATA[Jsonquiz CorCTF 2022 writeups We were given the link jsonquiz.be.ax.
+    <description><![CDATA[Jsonquiz Jsonquiz CorCTF 2022 writeups We were given the link jsonquiz.be.ax.
 I googled the questions and found that they are the same as in https://quizack.com/json/questions-and-answers .
 Just searched the page for the answer.
 I opened the network inspect tool just in case.
