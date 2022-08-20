@@ -33,7 +33,7 @@ a = 7904681699700731398014734140051852539595806699214201704996640156917030632322
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/arcvjs.github.io\/posts\/ctf\/corctf2022\/tadpole\/"
-        },"genre": "posts","keywords": "ctf, cryptography","wordcount":  551 ,
+        },"genre": "posts","keywords": "ctf, cryptography","wordcount":  553 ,
         "url": "https:\/\/arcvjs.github.io\/posts\/ctf\/corctf2022\/tadpole\/","datePublished": "2022-08-06T13:18:38+07:00","dateModified": "2022-08-06T13:18:38+07:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -107,7 +107,7 @@ a = 7904681699700731398014734140051852539595806699214201704996640156917030632322
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Tadpole</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-06">2022-08-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;551 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-06">2022-08-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;553 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -153,17 +153,9 @@ f(f(31337)) =  65547980822717919074991147621216627925232640728803041128894527143
 <pre><code>from Crypto.Util.number import bytes_to_long, isPrime
 from secrets import randbelow
 </code></pre><p>bytes_to_long, as its name suggest convert a byte to long.example:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>print(bytes_to_long(b&rsquo;test&rsquo;))
-1952805748</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>IsPrime determine if a number is a prime.A prime number is defined as:</p>
+<pre><code>&gt;&gt;&gt; print(bytes_to_long(b'test'))
+&gt;&gt;&gt; 1952805748
+</code></pre><p>IsPrime determine if a number is a prime.A prime number is defined as:</p>
 <blockquote>
 <p>A prime number is a natural number greater than 1 that cannot be formed by multiplying two smaller natural numbers.
 In other words:
