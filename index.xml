@@ -6,7 +6,7 @@
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 20 Aug 2022 11:08:49 &#43;0700</lastBuildDate>
             <atom:link href="https://arcvjs.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Postman</title>
+    <title>Postman CryptoburstCTF 2022 writeup</title>
     <link>https://arcvjs.github.io/posts/ctf/cryptoburst/postman/</link>
     <pubDate>Sat, 20 Aug 2022 09:46:34 &#43;0700</pubDate>
     <author>James S</author>
@@ -14,7 +14,7 @@
     <description><![CDATA[Postman - cryptoburst ctf 2022 writeups we were given the image first i tried searching for postman qr. Found no result. then, i tried reverse searching with google images. i found a similar images, from a website explaining types of barcode. https://www.dynamsoft.com/blog/insights/the-comprehensive-guide-to-1d-and-2d-barcodes/ the name of the barcodes are MaxiCode. It was used by UPS so the name Postman makes sense. Now it just comes down to reading the qr. After some browsing i found an online tool for reading.]]></description>
 </item>
 <item>
-    <title>Ook What Am I Looking At</title>
+    <title>Ook What Am I Looking At CryptoburstCTF 2022 writeup</title>
     <link>https://arcvjs.github.io/posts/ctf/cryptoburst/ook-what-am-i-looking-at/</link>
     <pubDate>Sat, 20 Aug 2022 09:18:49 &#43;0700</pubDate>
     <author>James S</author>
@@ -49,7 +49,7 @@ I copied the request as cUrl
  change it to:]]></description>
 </item>
 <item>
-    <title>Red Team Recon Writeups</title>
+    <title>Red Team Recon TryHackMe Writeups</title>
     <link>https://arcvjs.github.io/posts/tryhackme/red-team-recon/</link>
     <pubDate>Thu, 04 Aug 2022 00:00:00 &#43;0000</pubDate>
     <author>James S</author>

@@ -4,7 +4,7 @@
         <link>https://arcvjs.github.io/tags/ctf/</link>
         <description>ctf - Tag - Arcvjs&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 20 Aug 2022 09:46:34 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/ctf/" rel="self" type="application/rss+xml" /><item>
-    <title>Postman</title>
+    <title>Postman CryptoburstCTF 2022 writeup</title>
     <link>https://arcvjs.github.io/posts/ctf/cryptoburst/postman/</link>
     <pubDate>Sat, 20 Aug 2022 09:46:34 &#43;0700</pubDate>
     <author>James S</author>
@@ -12,7 +12,7 @@
     <description><![CDATA[Postman - cryptoburst ctf 2022 writeups we were given the image first i tried searching for postman qr. Found no result. then, i tried reverse searching with google images. i found a similar images, from a website explaining types of barcode. https://www.dynamsoft.com/blog/insights/the-comprehensive-guide-to-1d-and-2d-barcodes/ the name of the barcodes are MaxiCode. It was used by UPS so the name Postman makes sense. Now it just comes down to reading the qr. After some browsing i found an online tool for reading.]]></description>
 </item>
 <item>
-    <title>Ook What Am I Looking At</title>
+    <title>Ook What Am I Looking At CryptoburstCTF 2022 writeup</title>
     <link>https://arcvjs.github.io/posts/ctf/cryptoburst/ook-what-am-i-looking-at/</link>
     <pubDate>Sat, 20 Aug 2022 09:18:49 &#43;0700</pubDate>
     <author>James S</author>
