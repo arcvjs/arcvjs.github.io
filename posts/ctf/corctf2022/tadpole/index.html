@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Tadpole - Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:title" content="Tadpole" />
+        <title>Tadpole CorCTF 2022 writeup - Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:title" content="Tadpole CorCTF 2022 writeup" />
 <meta property="og:description" content="Tadpole corctf 2022 writeups we were given two files
 file 1: tadpole.py
 from Crypto.Util.number import bytes_to_long, isPrime from secrets import randbelow p = bytes_to_long(open(&quot;flag.txt&quot;, &quot;rb&quot;).read()) assert isPrime(p) a = randbelow(p) b = randbelow(p) def f(s): return (a * s &#43; b) % p print(&quot;a = &quot;, a) print(&quot;b = &quot;, b) print(&quot;f(31337) = &quot;, f(31337)) print(&quot;f(f(31337)) = &quot;, f(f(31337))) file 2: output.txt
@@ -14,7 +14,7 @@ a = 7904681699700731398014734140051852539595806699214201704996640156917030632322
 <meta property="article:published_time" content="2022-08-06T13:18:38+07:00" />
 <meta property="article:modified_time" content="2022-08-06T13:18:38+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tadpole"/>
+<meta name="twitter:title" content="Tadpole CorCTF 2022 writeup"/>
 <meta name="twitter:description" content="Tadpole corctf 2022 writeups we were given two files
 file 1: tadpole.py
 from Crypto.Util.number import bytes_to_long, isPrime from secrets import randbelow p = bytes_to_long(open(&quot;flag.txt&quot;, &quot;rb&quot;).read()) assert isPrime(p) a = randbelow(p) b = randbelow(p) def f(s): return (a * s &#43; b) % p print(&quot;a = &quot;, a) print(&quot;b = &quot;, b) print(&quot;f(31337) = &quot;, f(31337)) print(&quot;f(f(31337)) = &quot;, f(f(31337))) file 2: output.txt
@@ -28,7 +28,7 @@ a = 7904681699700731398014734140051852539595806699214201704996640156917030632322
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Tadpole",
+        "headline": "Tadpole CorCTF 2022 writeup",
         "inLanguage": "en-us",
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -105,7 +105,7 @@ a = 7904681699700731398014734140051852539595806699214201704996640156917030632322
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Tadpole</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Tadpole CorCTF 2022 writeup</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-06">2022-08-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;553 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
@@ -156,13 +156,13 @@ from secrets import randbelow
 <pre><code>&gt;&gt;&gt; print(bytes_to_long(b'test'))
 &gt;&gt;&gt; 1952805748
 </code></pre><p>IsPrime determine if a number is a prime.A prime number is defined as:</p>
-<blockquote>
-<p>A prime number is a natural number greater than 1 that cannot be formed by multiplying two smaller natural numbers.
-In other words:
-A number that is greater than 1 that only have two factor: 1 and itself.
-secrets.randbelow(n)
-Return a random int in the range [0, n).</p>
-</blockquote>
+<ul>
+<li>A prime number is a natural number greater than 1 that cannot be formed by multiplying two smaller natural numbers.
+In other words:</li>
+<li>A number that is greater than 1 that only have two factor: 1 and itself.
+secrets.randbelow(n)</li>
+<li>Return a random int in the range [0, n).</li>
+</ul>
 <pre><code>p = bytes_to_long(open(&quot;flag.txt&quot;, &quot;rb&quot;).read())
 assert isPrime(p)
 </code></pre><p>p is a long got from the the file flag.txt which is the flag.
@@ -185,22 +185,22 @@ f(31337) and f(f(31337)) looks interesting.</p>
 <h4 id="note-that-this-is-my-solution-i-dont-know-if-it-is-mathematically-correct-but-i-got-the-flag-nonetheless">note that this is my solution, i don&rsquo;t know if it is mathematically correct but i got the flag nonetheless.</h4>
 <p>since  we knew the result of f(31337) and f(f(31337)),
 we can try expand the function f to get a better picture:</p>
-<blockquote>
-<p>f(31337) = (a * 31337 + b) % p
-and
-f(f(31337)) = (a * 5292&hellip; + b) % p
+<ul>
+<li>f(31337) = (a * 31337 + b) % p
+and</li>
+<li>f(f(31337)) = (a * 5292&hellip; + b) % p
 we know from the code p is the flag, so we need to solve for it.
-simplify (a * 31337 + b), (a * 5292&hellip; + b) as k1,k2
-f(31337) = k1 % p
-and
-f(f(31337)) k2 % p
-if we subtract k1 and k2 with the result of functions f that we know we will get p multiplied by some random number
-k1 - f(31337) = x1 = r1 * p
-k2 - f(f(31337)) = x2 = r2 * p
+simplify (a * 31337 + b), (a * 5292&hellip; + b) as k1,k2</li>
+<li>f(31337) = k1 % p
+and</li>
+<li>f(f(31337)) k2 % p
+if we subtract k1 and k2 with the result of functions f that we know we will get p multiplied by some random number</li>
+<li>k1 - f(31337) = x1 = r1 * p</li>
+<li>k2 - f(f(31337)) = x2 = r2 * p
 r1 and r2 are both random and unknown, but we knew that x1 and x2 share p as its factor.
 we can try to find the greatest common divisor of x1 and x2 to find p, and then use long_to_bytes to print out the flag
-here is the solution code.</p>
-</blockquote>
+here is the solution code.</li>
+</ul>
 <pre><code>from Crypto.Util.number import *
 a = 7904681699700731398014734140051852539595806699214201704996640156917030632322659247608208994194840235514587046537148300460058962186080655943804500265088604049870276334033409850015651340974377752209566343260236095126079946537115705967909011471361527517536608234561184232228641232031445095605905800675590040729
 b = 16276123569406561065481657801212560821090379741833362117064628294630146690975007397274564762071994252430611109538448562330994891595998956302505598671868738461167036849263008183930906881997588494441620076078667417828837239330797541019054284027314592321358909551790371565447129285494856611848340083448507929914
@@ -232,7 +232,7 @@ print(long_to_bytes(p))
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://arcvjs.github.io/posts/ctf/corctf2022/tadpole/" data-title="Tadpole" data-hashtags="ctf,cryptography"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://arcvjs.github.io/posts/ctf/corctf2022/tadpole/" data-title="Tadpole"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://arcvjs.github.io/posts/ctf/corctf2022/tadpole/" data-title="Tadpole"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://arcvjs.github.io/posts/ctf/corctf2022/tadpole/" data-title="Tadpole CorCTF 2022 writeup" data-hashtags="ctf,cryptography"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://arcvjs.github.io/posts/ctf/corctf2022/tadpole/" data-title="Tadpole CorCTF 2022 writeup"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://arcvjs.github.io/posts/ctf/corctf2022/tadpole/" data-title="Tadpole CorCTF 2022 writeup"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -244,7 +244,7 @@ print(long_to_bytes(p))
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/ctf/corctf2022/jsonquiz/" class="prev" rel="prev" title="Jsonquiz CorCTF 2022 writeups"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Jsonquiz CorCTF 2022 writeups</a>
+    <div class="post-nav"><a href="/posts/ctf/corctf2022/jsonquiz/" class="prev" rel="prev" title="Jsonquiz CorCTF 2022 writeup"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Jsonquiz CorCTF 2022 writeup</a>
             <a href="/posts/ctf/cryptoburst/ook-what-am-i-looking-at/" class="next" rel="next" title="Ook What Am I Looking At">Ook What Am I Looking At<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
