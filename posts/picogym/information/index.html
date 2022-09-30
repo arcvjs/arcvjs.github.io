@@ -4,46 +4,36 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Jsonquiz CorCTF 2022 writeup - Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:title" content="Jsonquiz CorCTF 2022 writeup" />
-<meta property="og:description" content="Jsonquiz Jsonquiz CorCTF 2022 writeups We were given the link jsonquiz.be.ax.
-I googled the questions and found that they are the same as in https://quizack.com/json/questions-and-answers .
-Just searched the page for the answer.
-I opened the network inspect tool just in case.
-After i answered question 15, there was a post request with payload &ldquo;score=0&rdquo;
-I copied the request as cUrl
-curl &lsquo;https://jsonquiz.be.ax/submit&#39; -X POST &ndash;data-raw &lsquo;score=0&rsquo;
-change it to:" />
+        <title>Information - Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:title" content="Information" />
+<meta property="og:description" content="Information Picogym Writeups Files can always be changed in a secret way. Can you find the flag?
+We were given the file cat.jpg. There&rsquo;s something called a metadata on some images. Metadata stores basic information about the images. Such as author, time when the picture was taken, color profiles, and many more.
+To view the metadata of an images, you can use a tool called exiftool. To install it on Ubuntu or other Debian based system you can use the command: sudo apt install exiftool Or if you are on a arch based system you can use the command: sudo pacman -S perl-image-exiftool Alternatively you can use an online tool to view metadatas." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://arcvjs.github.io/posts/ctf/corctf2022/jsonquiz/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-08-06T11:07:52+07:00" />
-<meta property="article:modified_time" content="2022-08-06T11:07:52+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
+<meta property="og:url" content="https://arcvjs.github.io/posts/picogym/information/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-30T20:38:18+07:00" />
+<meta property="article:modified_time" content="2022-09-30T20:38:18+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Jsonquiz CorCTF 2022 writeup"/>
-<meta name="twitter:description" content="Jsonquiz Jsonquiz CorCTF 2022 writeups We were given the link jsonquiz.be.ax.
-I googled the questions and found that they are the same as in https://quizack.com/json/questions-and-answers .
-Just searched the page for the answer.
-I opened the network inspect tool just in case.
-After i answered question 15, there was a post request with payload &ldquo;score=0&rdquo;
-I copied the request as cUrl
-curl &lsquo;https://jsonquiz.be.ax/submit&#39; -X POST &ndash;data-raw &lsquo;score=0&rsquo;
-change it to:"/>
+<meta name="twitter:title" content="Information"/>
+<meta name="twitter:description" content="Information Picogym Writeups Files can always be changed in a secret way. Can you find the flag?
+We were given the file cat.jpg. There&rsquo;s something called a metadata on some images. Metadata stores basic information about the images. Such as author, time when the picture was taken, color profiles, and many more.
+To view the metadata of an images, you can use a tool called exiftool. To install it on Ubuntu or other Debian based system you can use the command: sudo apt install exiftool Or if you are on a arch based system you can use the command: sudo pacman -S perl-image-exiftool Alternatively you can use an online tool to view metadatas."/>
 <meta name="application-name" content="Arcvjs&#39;s blog">
 <meta name="apple-mobile-web-app-title" content="Arcvjs&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://arcvjs.github.io/posts/ctf/corctf2022/jsonquiz/" /><link rel="prev" href="https://arcvjs.github.io/posts/tryhackme/red-team-recon/" /><link rel="next" href="https://arcvjs.github.io/posts/ctf/corctf2022/tadpole/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://arcvjs.github.io/posts/picogym/information/" /><link rel="prev" href="https://arcvjs.github.io/posts/tryhackme/pickle-rick-tryhackme-writeup/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Jsonquiz CorCTF 2022 writeup",
+        "headline": "Information",
         "inLanguage": "en-us",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/arcvjs.github.io\/posts\/ctf\/corctf2022\/jsonquiz\/"
-        },"genre": "posts","keywords": "json, ctf, misc","wordcount":  83 ,
-        "url": "https:\/\/arcvjs.github.io\/posts\/ctf\/corctf2022\/jsonquiz\/","datePublished": "2022-08-06T11:07:52+07:00","dateModified": "2022-08-06T11:07:52+07:00","publisher": {
+            "@id": "https:\/\/arcvjs.github.io\/posts\/picogym\/information\/"
+        },"genre": "posts","keywords": "forensics","wordcount":  180 ,
+        "url": "https:\/\/arcvjs.github.io\/posts\/picogym\/information\/","datePublished": "2022-09-30T20:38:18+07:00","dateModified": "2022-09-30T20:38:18+07:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -114,65 +104,62 @@ change it to:"/>
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Jsonquiz CorCTF 2022 writeup</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Information</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-06">2022-08-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;83 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-30">2022-09-30</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;180 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#jsonquiz-corctf-2022-writeups">Jsonquiz CorCTF 2022 writeups</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><h1 id="jsonquiz">Jsonquiz</h1>
-<h3 id="jsonquiz-corctf-2022-writeups">Jsonquiz CorCTF 2022 writeups</h3>
-<p>We were given the link <a href="https://jsonquiz.be.ax/" target="_blank" rel="noopener noreffer ">jsonquiz.be.ax</a>.</p>
-<p>I googled the questions and found that they are the same as in <a href="https://quizack.com/json/questions-and-answers" target="_blank" rel="noopener noreffer ">https://quizack.com/json/questions-and-answers</a> .</p>
-<p>Just searched the page for the answer.</p>
-<p>I opened the network inspect tool just in case.</p>
-<p>After i answered question 15, there was a post request with payload &ldquo;score=0&rdquo;</p>
-<p>I copied the request as cUrl</p>
-<blockquote>
-<p>curl &lsquo;<a href="https://jsonquiz.be.ax/submit%27" target="_blank" rel="noopener noreffer ">https://jsonquiz.be.ax/submit'</a> -X POST &ndash;data-raw &lsquo;score=0&rsquo;</p>
-</blockquote>
-<p>change it to:</p>
-<blockquote>
-<p>curl &lsquo;<a href="https://jsonquiz.be.ax/submit%27" target="_blank" rel="noopener noreffer ">https://jsonquiz.be.ax/submit'</a> -X POST &ndash;data-raw &lsquo;score=100&rsquo;</p>
-</blockquote>
-<p>and got the response</p>
-<pre tabindex="0"><code>{&#34;pass&#34;:true,&#34;flag&#34;:&#34;corctf{th3_linkedin_JSON_quiz_is_too_h4rd!!!}&#34;}
-</code></pre><p>thats it.</p>
-</div><div class="post-footer" id="post-footer">
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><h1 id="information-picogym-writeups">Information Picogym Writeups</h1>
+<p><code>Files can always be changed in a secret way. Can you find the flag?</code></p>
+<p>We were given the file cat.jpg.
+There&rsquo;s something called a metadata on some images.
+Metadata stores basic information about the images.
+Such as author, time when the picture was taken, color profiles, and many more.</p>
+<p>To view the metadata of an images, you can use a tool called exiftool.
+To install it on Ubuntu or other Debian based system you can use the command:
+<code>sudo apt install exiftool</code>
+Or if you are on a arch based system you can use the command:
+<code>sudo pacman -S perl-image-exiftool</code>
+Alternatively you can use an online tool to view metadatas.</p>
+<p>To view a file&rsquo;s metadata use the command:
+<code>exiftool {filename}</code></p>
+<p>After doing the command (note that you need to be on the same directory as the image, use cd to change directory)
+<code>exiftool cat.jpg</code>
+i saw something interesting.
+The lisence information is weird.</p>
+<pre tabindex="0"><code>License                         : cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9
+</code></pre><p>I tried using online tools to identify it.
+It was identified as base64.
+<a href="https://www.dcode.fr/cipher-identifier" target="_blank" rel="noopener noreffer ">https://www.dcode.fr/cipher-identifier</a>
+decoded it, and got the flag.</p>
+<pre tabindex="0"><code>picoCTF{the_m3tadata_1s_modified}
+</code></pre></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-08-06</span>
+                <span>Updated on 2022-09-30</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://arcvjs.github.io/posts/ctf/corctf2022/jsonquiz/" data-title="Jsonquiz CorCTF 2022 writeup" data-hashtags="json,ctf,misc"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://arcvjs.github.io/posts/ctf/corctf2022/jsonquiz/" data-title="Jsonquiz CorCTF 2022 writeup"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://arcvjs.github.io/posts/ctf/corctf2022/jsonquiz/" data-title="Jsonquiz CorCTF 2022 writeup"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://arcvjs.github.io/posts/picogym/information/" data-title="Information" data-hashtags="forensics"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://arcvjs.github.io/posts/picogym/information/" data-title="Information"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://arcvjs.github.io/posts/picogym/information/" data-title="Information"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/json/">json</a>,&nbsp;<a href="/tags/ctf/">ctf</a>,&nbsp;<a href="/tags/misc/">misc</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/forensics/">forensics</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/tryhackme/red-team-recon/" class="prev" rel="prev" title="Red Team Recon TryHackMe Writeups"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Red Team Recon TryHackMe Writeups</a>
-            <a href="/posts/ctf/corctf2022/tadpole/" class="next" rel="next" title="Tadpole CorCTF 2022 writeup">Tadpole CorCTF 2022 writeup<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/tryhackme/pickle-rick-tryhackme-writeup/" class="prev" rel="prev" title="Pickle Rick TryHackMe Writeup"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Pickle Rick TryHackMe Writeup</a></div>
 </div>
 </article></div>
             </main><footer class="footer">
