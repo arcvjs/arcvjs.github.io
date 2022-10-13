@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.102.3" />
+	<meta name="generator" content="Hugo 0.104.2" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -88,6 +88,13 @@
     </div><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/arcvjs" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/picogym/mind-your-ps-and-qs/">Mind Your Ps and Qs</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-10-02">2022-10-02</time></span></div><div class="content">Mind Your Ps and Qs picoGym writeup. Challenges In RSA, a small e value can be problematic, but what about N? Can you decrypt this?
+File given: values
+values: c= 8533139361076999596208540806559574687666062896040360148742851107661304651861689 n= 769457290801263793712740792519696786147248001937382943813345728685422050738403253 e= 65537 Explaination RSA is an asymmetric cryptographic algorithm. It is called asymmetric because there are 2 keys. Public key are used to encrypt the clear text. Private key on the other hand are used to decrypt the encrypted text.</div><div class="post-footer">
+        <a href="/posts/picogym/mind-your-ps-and-qs/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cryptography/">cryptography</a>,&nbsp;<a href="/tags/rsa/">RSA</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/picogym/information/">Information</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-30">2022-09-30</time></span></div><div class="content">Information Picogym Writeups Files can always be changed in a secret way. Can you find the flag?
 We were given the file cat.jpg. There&rsquo;s something called a metadata on some images. Metadata stores basic information about the images. Such as author, time when the picture was taken, color profiles, and many more.
@@ -119,18 +126,6 @@ from Crypto.Util.number import bytes_to_long, isPrime from secrets import randbe
 a = 7904681699700731398014734140051852539595806699214201704996640156917030632322659247608208994194840235514587046537148300460058962186080655943804500265088604049870276334033409850015651340974377752209566343260236095126079946537115705967909011471361527517536608234561184232228641232031445095605905800675590040729 b = 16276123569406561065481657801212560821090379741833362117064628294630146690975007397274564762071994252430611109538448562330994891595998956302505598671868738461167036849263008183930906881997588494441620076078667417828837239330797541019054284027314592321358909551790371565447129285494856611848340083448507929914 f(31337) = 52926479498929750044944450970022719277159248911867759992013481774911823190312079157541825423250020665153531167070545276398175787563829542933394906173782217836783565154742242903537987641141610732290449825336292689379131350316072955262065808081711030055841841406454441280215520187695501682433223390854051207100 f(f(31337)) = 65547980822717919074991147621216627925232640728803041128894527143789172030203362875900831296779973655308791371486165705460914922484808659375299900737148358509883361622225046840011907835671004704947767016613458301891561318029714351016012481309583866288472491239769813776978841785764693181622804797533665463949 Understanding tadpole.</div><div class="post-footer">
         <a href="/posts/ctf/corctf2022/tadpole/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ctf/">ctf</a>,&nbsp;<a href="/tags/cryptography/">cryptography</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/ctf/corctf2022/jsonquiz/">Jsonquiz CorCTF 2022 writeup</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-06">2022-08-06</time></span></div><div class="content">Jsonquiz Jsonquiz CorCTF 2022 writeups We were given the link jsonquiz.be.ax.
-I googled the questions and found that they are the same as in https://quizack.com/json/questions-and-answers .
-Just searched the page for the answer.
-I opened the network inspect tool just in case.
-After i answered question 15, there was a post request with payload &ldquo;score=0&rdquo;
-I copied the request as cUrl
-curl &lsquo;https://jsonquiz.be.ax/submit' -X POST &ndash;data-raw &lsquo;score=0&rsquo;
-change it to:</div><div class="post-footer">
-        <a href="/posts/ctf/corctf2022/jsonquiz/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/json/">json</a>,&nbsp;<a href="/tags/ctf/">ctf</a>,&nbsp;<a href="/tags/misc/">misc</a></div></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>

@@ -3,7 +3,17 @@
         <title>All Posts - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/posts/</link>
         <description>All Posts | Arcvjs&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 30 Sep 2022 20:38:18 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 02 Oct 2022 10:45:34 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Mind Your Ps and Qs</title>
+    <link>https://arcvjs.github.io/posts/picogym/mind-your-ps-and-qs/</link>
+    <pubDate>Sun, 02 Oct 2022 10:45:34 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/picogym/mind-your-ps-and-qs/</guid>
+    <description><![CDATA[Mind Your Ps and Qs picoGym writeup. Challenges In RSA, a small e value can be problematic, but what about N? Can you decrypt this?
+File given: values
+values: c= 8533139361076999596208540806559574687666062896040360148742851107661304651861689 n= 769457290801263793712740792519696786147248001937382943813345728685422050738403253 e= 65537 Explaination RSA is an asymmetric cryptographic algorithm. It is called asymmetric because there are 2 keys. Public key are used to encrypt the clear text. Private key on the other hand are used to decrypt the encrypted text.]]></description>
+</item>
+<item>
     <title>Information</title>
     <link>https://arcvjs.github.io/posts/picogym/information/</link>
     <pubDate>Fri, 30 Sep 2022 20:38:18 &#43;0700</pubDate>

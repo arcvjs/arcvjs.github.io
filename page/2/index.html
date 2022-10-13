@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.102.3" />
+	<meta name="generator" content="Hugo 0.104.2" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -88,6 +88,18 @@
     </div><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/arcvjs" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/ctf/corctf2022/jsonquiz/">Jsonquiz CorCTF 2022 writeup</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-06">2022-08-06</time></span></div><div class="content">Jsonquiz Jsonquiz CorCTF 2022 writeups We were given the link jsonquiz.be.ax.
+I googled the questions and found that they are the same as in https://quizack.com/json/questions-and-answers .
+Just searched the page for the answer.
+I opened the network inspect tool just in case.
+After i answered question 15, there was a post request with payload &ldquo;score=0&rdquo;
+I copied the request as cUrl
+curl &lsquo;https://jsonquiz.be.ax/submit' -X POST &ndash;data-raw &lsquo;score=0&rsquo;
+change it to:</div><div class="post-footer">
+        <a href="/posts/ctf/corctf2022/jsonquiz/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/json/">json</a>,&nbsp;<a href="/tags/ctf/">ctf</a>,&nbsp;<a href="/tags/misc/">misc</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/tryhackme/red-team-recon/">Red Team Recon TryHackMe Writeups</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-04">2022-08-04</time></span></div><div class="content">This is a writeup for the room Red Team Recon on tryhackme here Built-in Tools When was thmredteam.com created (registered)? (YYYY-MM-DD)
 2021-09-24, got from whois. To how many IPv4 addresses does clinic.thmredteam.com resolve?
