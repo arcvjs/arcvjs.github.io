@@ -3,9 +3,19 @@
         <title>Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/</link>
         <description>blogs, others</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 02 Oct 2022 10:45:34 &#43;0700</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 15 Oct 2022 21:05:19 &#43;0700</lastBuildDate>
             <atom:link href="https://arcvjs.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Static Aint Always Noise</title>
+    <link>https://arcvjs.github.io/posts/picogym/static-aint-always-noise/</link>
+    <pubDate>Sat, 15 Oct 2022 21:05:19 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/picogym/static-aint-always-noise/</guid>
+    <description><![CDATA[Static Ain&rsquo;t Always Noise Picogym writeups. we we&rsquo;re given two files. static and ltdis.sh . static is filled with binary data. so i tried to print all readables character in it with the command string. and after a little bit of scrolling i found the flag.
+use the command:
+strings static | grep pico{ flag: picoCTF{d15a5m_t34s3r_f6c48608}]]></description>
+</item>
+<item>
     <title>Mind Your Ps and Qs</title>
     <link>https://arcvjs.github.io/posts/picogym/mind-your-ps-and-qs/</link>
     <pubDate>Sun, 02 Oct 2022 10:45:34 &#43;0700</pubDate>
