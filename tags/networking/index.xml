@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>networking - Tag - Arcvjs&#39;s blog</title>
+        <link>https://arcvjs.github.io/tags/networking/</link>
+        <description>networking - Tag - Arcvjs&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 12 Sep 2023 09:57:44 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/networking/" rel="self" type="application/rss+xml" /><item>
+    <title>SSH Config Debian</title>
+    <link>https://arcvjs.github.io/posts/networking/ssh-config/</link>
+    <pubDate>Tue, 12 Sep 2023 09:57:44 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/ssh-config/</guid>
+    <description><![CDATA[#Configurasi SSH di Linux
+Update dan Upgrade repository gunakan command apt untuk mengupdate and upgrade package yang sudah terinstall, sebagai best practice. jalankan perintah berikut di terminal linux anda.
+sudo apt update &amp;&amp; sudo apt upgrade Install openssh-server gunakan apt package manager untuk menginstall openssh-server, jalankan perintah dibawah:
+sudo apt install openssh-server -y flag -y digunakan untuk menerima konfirmasi installasi (tidak wajib).
+Jalankan sshd service setiap boot gunakan command systemctl untuk membuat sshd berjalan setiap linux di booting, jalankan perintah dibawah ini:]]></description>
+</item>
+</channel>
+</rss>

@@ -9,10 +9,9 @@
 export IP=(your target machine&#39;s IP addres) Enum Nmap I did a simple nmap scan on the server:
 nmap -sCV -oN nmap-init.log $IP -sCV is for using the default scripts and check for services version on the machine." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://arcvjs.github.io/posts/tryhackme/pickle-rick-tryhackme-writeup/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://arcvjs.github.io/posts/tryhackme/pickle-rick-tryhackme-writeup/" />
 <meta property="article:published_time" content="2022-09-11T22:49:54+07:00" />
 <meta property="article:modified_time" content="2022-09-11T22:49:54+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Pickle Rick TryHackMe Writeup"/>
 <meta name="twitter:description" content="Pickle Rick TryHackMe Writeup This is a blog on how i solved Pickle Rick room on tryhackme. Note that i use linux. First i put the machine IP into env using the export command.
@@ -126,15 +125,15 @@ nmap -sCV -oN nmap-init.log $IP -sCV is for using the default scripts and check 
 <p>This is a blog on how i solved Pickle Rick room on tryhackme.
 Note that i use linux.
 First i put the machine IP into env using the export command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export IP<span style="color:#f92672">=(</span>your target machine<span style="color:#960050;background-color:#1e0010">&#39;</span>s IP addres<span style="color:#f92672">)</span>
-</span></span></code></pre></div><h2 id="enum">Enum</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export IP<span style="color:#f92672">=(</span>your target machine<span style="color:#960050;background-color:#1e0010">&#39;</span>s IP addres<span style="color:#f92672">)</span>
+</code></pre></div><h2 id="enum">Enum</h2>
 <h3 id="nmap">Nmap</h3>
 <p>I did a simple nmap scan on the server:</p>
-<pre tabindex="0"><code>nmap -sCV -oN nmap-init.log $IP
+<pre><code>nmap -sCV -oN nmap-init.log $IP
 </code></pre><p>-sCV is for using the default scripts and check for services version on the machine.
 -oN is to log the output of nmap into a file.</p>
 <p>scan result</p>
-<pre tabindex="0"><code>PORT      STATE    SERVICE  VERSION
+<pre><code>PORT      STATE    SERVICE  VERSION
 22/tcp    open     ssh      OpenSSH 7.2p2 Ubuntu 4ubuntu2.6 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
 |   2048 b0:cb:ec:b6:8c:44:c3:c8:64:4c:00:c0:fb:fd:4b:0a (RSA)
@@ -149,14 +148,14 @@ First i put the machine IP into env using the export command.</p>
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 </code></pre><p>It shows that there are a web service running on port 80, lets check that with our browser.
 The website shows some reference to Burp Suite, After viewing the page sources i saw a comment:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  <span style="color:#75715e">&lt;!--
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    Note to self, remember username!
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    Username: R1ckRul3s
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  --&gt;</span>
-</span></span></code></pre></div><p>Then i tried loading the page in Burp Suite.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">  <span style="color:#75715e">&lt;!--
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">    Note to self, remember username!
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">    Username: R1ckRul3s
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">  --&gt;</span>
+</code></pre></div><p>Then i tried loading the page in Burp Suite.</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -183,7 +182,7 @@ The website shows some reference to Burp Suite, After viewing the page sources i
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
         </div>
     </footer></div>
 
