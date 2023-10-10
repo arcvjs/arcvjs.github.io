@@ -9,7 +9,7 @@
 <meta property="og:description" content="blogs, others" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://arcvjs.github.io/" />
-<meta property="og:updated_time" content="2023-10-10T07:50:37+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
+<meta property="og:updated_time" content="2023-10-10T08:12:20+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Arcvjs&#39;s blog"/>
 <meta name="twitter:description" content="blogs, others"/>
@@ -88,6 +88,25 @@
     </div><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/arcvjs" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/networking/dns-server/">DNS Server konfigurasi menggunakan bind9</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-10">2023-10-10</time></span></div><div class="content">Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
+sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
+sudo nano /etc/bind/named.conf.local isi file dengan:
+zone &quot;james.com&quot; { type master; file &quot;/etc/bind/db.james.com&quot;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
+sekarang kita buat file db.james.com
+sesuaikan dengan apa yang ditulis di named.conf.local</div><div class="post-footer">
+        <a href="/posts/networking/dns-server/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/dns/">DNS</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/networking/dhcp-server/">DHCP Server configuration di linux</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-10">2023-10-10</time></span></div><div class="content">Cara konfigurasi DHCP Server di linux dalam tutorial ini, saya akan menjelaskan cara konfigurasi dchp server di debian linux. Saaya akan menggunakan isc-dhcp-server.
+Installasi isc-dhcp-server Untuk menginstall isc-dhcp-server, saya akan menggunakan apt:
+sudo apt-get update sudo apt-uget install isc-dhcp-server Konfigurasi gunakan command ini untuk mengubah file konfigurasi:
+sudo nano /etc/dhcp/dhcpd.conf berikut contoh konfigurasi
+subnet 192.168.1.0 netmask 255.255.255.0 { range 192.168.1.100 192.168.1.200; option routers 192.168.1.1; option domain-name-servers 8.8.8.8, 8.8.4.4; option subnet-mask 255.</div><div class="post-footer">
+        <a href="/posts/networking/dhcp-server/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/dchp/">dchp</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/networking/ftp-server/">FTP Server configuration</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-10">2023-10-10</time></span></div><div class="content">#How to configure vsftpd server in debian Dalam tutorial ini saya akan menjelaskan cara konfigurasi vsftpd. u
 Installasi vsftpd server Untuk menginstallasi vsftpd di linux, dapat menggunakan package manager apt-get, menggunakan command seperti dibawah ini:
@@ -117,19 +136,6 @@ File given: values
 values: c= 8533139361076999596208540806559574687666062896040360148742851107661304651861689 n= 769457290801263793712740792519696786147248001937382943813345728685422050738403253 e= 65537 Explaination RSA is an asymmetric cryptographic algorithm. It is called asymmetric because there are 2 keys. Public key are used to encrypt the clear text. Private key on the other hand are used to decrypt the encrypted text.</div><div class="post-footer">
         <a href="/posts/picogym/mind-your-ps-and-qs/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cryptography/">cryptography</a>,&nbsp;<a href="/tags/rsa/">RSA</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/picogym/information/">Information</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-30">2022-09-30</time></span></div><div class="content">Information Picogym Writeups Files can always be changed in a secret way. Can you find the flag?
-We were given the file cat.jpg. There&rsquo;s something called a metadata on some images. Metadata stores basic information about the images. Such as author, time when the picture was taken, color profiles, and many more.
-To view the metadata of an images, you can use a tool called exiftool. To install it on Ubuntu or other Debian based system you can use the command: sudo apt install exiftool Or if you are on a arch based system you can use the command: sudo pacman -S perl-image-exiftool Alternatively you can use an online tool to view metadatas.</div><div class="post-footer">
-        <a href="/posts/picogym/information/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/forensics/">forensics</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/tryhackme/pickle-rick-tryhackme-writeup/">Pickle Rick TryHackMe Writeup</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-11">2022-09-11</time></span></div><div class="content">Pickle Rick TryHackMe Writeup This is a blog on how i solved Pickle Rick room on tryhackme. Note that i use linux. First i put the machine IP into env using the export command.
-export IP=(your target machine&#39;s IP addres) Enum Nmap I did a simple nmap scan on the server:
-nmap -sCV -oN nmap-init.log $IP -sCV is for using the default scripts and check for services version on the machine.</div><div class="post-footer">
-        <a href="/posts/tryhackme/pickle-rick-tryhackme-writeup/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -137,6 +143,10 @@ nmap -sCV -oN nmap-init.log $IP -sCV is for using the default scripts and check 
                 </li><li class="page-item ">
                     <span class="page-link">
                         <a href="/page/2/">2</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/3/">3</a>
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">

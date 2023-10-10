@@ -3,7 +3,32 @@
         <title>linux - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/linux/</link>
         <description>linux - Tag - Arcvjs&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 10 Oct 2023 07:50:37 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/linux/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>DNS Server konfigurasi menggunakan bind9</title>
+    <link>https://arcvjs.github.io/posts/networking/dns-server/</link>
+    <pubDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/dns-server/</guid>
+    <description><![CDATA[Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
+sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
+sudo nano /etc/bind/named.conf.local isi file dengan:
+zone &quot;james.com&quot; { type master; file &quot;/etc/bind/db.james.com&quot;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
+sekarang kita buat file db.james.com
+sesuaikan dengan apa yang ditulis di named.conf.local]]></description>
+</item>
+<item>
+    <title>DHCP Server configuration di linux</title>
+    <link>https://arcvjs.github.io/posts/networking/dhcp-server/</link>
+    <pubDate>Tue, 10 Oct 2023 08:12:15 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/dhcp-server/</guid>
+    <description><![CDATA[Cara konfigurasi DHCP Server di linux dalam tutorial ini, saya akan menjelaskan cara konfigurasi dchp server di debian linux. Saaya akan menggunakan isc-dhcp-server.
+Installasi isc-dhcp-server Untuk menginstall isc-dhcp-server, saya akan menggunakan apt:
+sudo apt-get update sudo apt-uget install isc-dhcp-server Konfigurasi gunakan command ini untuk mengubah file konfigurasi:
+sudo nano /etc/dhcp/dhcpd.conf berikut contoh konfigurasi
+subnet 192.168.1.0 netmask 255.255.255.0 { range 192.168.1.100 192.168.1.200; option routers 192.168.1.1; option domain-name-servers 8.8.8.8, 8.8.4.4; option subnet-mask 255.]]></description>
+</item>
+<item>
     <title>FTP Server configuration</title>
     <link>https://arcvjs.github.io/posts/networking/ftp-server/</link>
     <pubDate>Tue, 10 Oct 2023 07:50:37 &#43;0700</pubDate>

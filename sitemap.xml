@@ -2,12 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://arcvjs.github.io/</loc><lastmod>2023-10-10T07:50:37&#43;07:00</lastmod></url><url>
+            <loc>https://arcvjs.github.io/</loc><lastmod>2023-10-10T08:12:20&#43;07:00</lastmod></url><url>
+            <loc>https://arcvjs.github.io/tags/dns/</loc><lastmod>2023-10-10T08:12:20&#43;07:00</lastmod></url><url>
+            <loc>https://arcvjs.github.io/posts/networking/dns-server/</loc><lastmod>2023-10-10T08:12:20&#43;07:00</lastmod></url><url>
+            <loc>https://arcvjs.github.io/tags/linux/</loc><lastmod>2023-10-10T08:12:20&#43;07:00</lastmod></url><url>
+            <loc>https://arcvjs.github.io/posts/</loc><lastmod>2023-10-10T08:12:20&#43;07:00</lastmod></url><url>
+            <loc>https://arcvjs.github.io/tags/</loc><lastmod>2023-10-10T08:12:20&#43;07:00</lastmod></url><url>
+            <loc>https://arcvjs.github.io/tags/dchp/</loc><lastmod>2023-10-10T08:12:15&#43;07:00</lastmod></url><url>
+            <loc>https://arcvjs.github.io/posts/networking/dhcp-server/</loc><lastmod>2023-10-10T08:12:15&#43;07:00</lastmod></url><url>
             <loc>https://arcvjs.github.io/tags/ftp/</loc><lastmod>2023-10-10T07:50:37&#43;07:00</lastmod></url><url>
             <loc>https://arcvjs.github.io/posts/networking/ftp-server/</loc><lastmod>2023-10-10T07:50:37&#43;07:00</lastmod></url><url>
-            <loc>https://arcvjs.github.io/tags/linux/</loc><lastmod>2023-10-10T07:50:37&#43;07:00</lastmod></url><url>
-            <loc>https://arcvjs.github.io/posts/</loc><lastmod>2023-10-10T07:50:37&#43;07:00</lastmod></url><url>
-            <loc>https://arcvjs.github.io/tags/</loc><lastmod>2023-10-10T07:50:37&#43;07:00</lastmod></url><url>
             <loc>https://arcvjs.github.io/tags/networking/</loc><lastmod>2023-09-12T09:57:44&#43;07:00</lastmod></url><url>
             <loc>https://arcvjs.github.io/posts/networking/ssh-config/</loc><lastmod>2023-09-12T09:57:44&#43;07:00</lastmod></url><url>
             <loc>https://arcvjs.github.io/posts/picogym/static-aint-always-noise/</loc><lastmod>2022-10-15T21:05:19&#43;07:00</lastmod></url><url>
@@ -25,7 +29,6 @@
             <loc>https://arcvjs.github.io/tags/json/</loc><lastmod>2022-08-06T11:07:52&#43;07:00</lastmod></url><url>
             <loc>https://arcvjs.github.io/posts/ctf/corctf2022/jsonquiz/</loc><lastmod>2022-08-06T11:07:52&#43;07:00</lastmod></url><url>
             <loc>https://arcvjs.github.io/tags/misc/</loc><lastmod>2022-08-06T11:07:52&#43;07:00</lastmod></url><url>
-            <loc>https://arcvjs.github.io/tags/dns/</loc><lastmod>2022-08-04T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://arcvjs.github.io/posts/tryhackme/red-team-recon/</loc><lastmod>2022-08-04T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://arcvjs.github.io/tags/tryhackme/</loc><lastmod>2022-08-04T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://arcvjs.github.io/posts/first-blog/</loc><lastmod>2022-07-28T00:00:00&#43;00:00</lastmod></url><url>
