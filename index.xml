@@ -3,9 +3,20 @@
         <title>Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/</link>
         <description>blogs, others</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 12 Sep 2023 09:57:44 &#43;0700</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 10 Oct 2023 07:50:37 &#43;0700</lastBuildDate>
             <atom:link href="https://arcvjs.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>FTP Server configuration</title>
+    <link>https://arcvjs.github.io/posts/networking/ftp-server/</link>
+    <pubDate>Tue, 10 Oct 2023 07:50:37 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/ftp-server/</guid>
+    <description><![CDATA[#How to configure vsftpd server in debian Dalam tutorial ini saya akan menjelaskan cara konfigurasi vsftpd. u
+Installasi vsftpd server Untuk menginstallasi vsftpd di linux, dapat menggunakan package manager apt-get, menggunakan command seperti dibawah ini:
+sudo apt-get install vsftpd Ubah file konfigurasi vsftpd Setelah vsftpd sudah terinstall tanpa error, selanjutnya kita ubah file konfigurasi default di linux. Kita akan menggunakan text editor nano:
+sudo nano /etc/vsftpd.conf Masukan password karena perlu privilages sudo.]]></description>
+</item>
+<item>
     <title>SSH Config Debian</title>
     <link>https://arcvjs.github.io/posts/networking/ssh-config/</link>
     <pubDate>Tue, 12 Sep 2023 09:57:44 &#43;0700</pubDate>
@@ -99,18 +110,6 @@ After i answered question 15, there was a post request with payload &ldquo;score
 I copied the request as cUrl
  curl &lsquo;https://jsonquiz.be.ax/submit' -X POST &ndash;data-raw &lsquo;score=0&rsquo;
  change it to:]]></description>
-</item>
-<item>
-    <title>Red Team Recon TryHackMe Writeups</title>
-    <link>https://arcvjs.github.io/posts/tryhackme/red-team-recon/</link>
-    <pubDate>Thu, 04 Aug 2022 00:00:00 &#43;0000</pubDate>
-    <author>James S</author>
-    <guid>https://arcvjs.github.io/posts/tryhackme/red-team-recon/</guid>
-    <description><![CDATA[This is a writeup for the room Red Team Recon on tryhackme here Built-in Tools When was thmredteam.com created (registered)? (YYYY-MM-DD)
-2021-09-24, got from whois. To how many IPv4 addresses does clinic.thmredteam.com resolve?
-2, got from dig. To how many IPv6 addresses does clinic.thmredteam.com resolve?
-2, got from dig with -6 flag. Advanced Searching How would you search using Google for xls indexed for http://clinic.thmredteam.com?
-filetype:xls site:clinic.thmredteam.com How would you search using Google for files with the word passwords for http://clinic.]]></description>
 </item>
 </channel>
 </rss>

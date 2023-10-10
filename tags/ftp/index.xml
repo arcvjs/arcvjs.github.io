@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>ftp - Tag - Arcvjs&#39;s blog</title>
+        <link>https://arcvjs.github.io/tags/ftp/</link>
+        <description>ftp - Tag - Arcvjs&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 10 Oct 2023 07:50:37 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/ftp/" rel="self" type="application/rss+xml" /><item>
+    <title>FTP Server configuration</title>
+    <link>https://arcvjs.github.io/posts/networking/ftp-server/</link>
+    <pubDate>Tue, 10 Oct 2023 07:50:37 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/ftp-server/</guid>
+    <description><![CDATA[#How to configure vsftpd server in debian Dalam tutorial ini saya akan menjelaskan cara konfigurasi vsftpd. u
+Installasi vsftpd server Untuk menginstallasi vsftpd di linux, dapat menggunakan package manager apt-get, menggunakan command seperti dibawah ini:
+sudo apt-get install vsftpd Ubah file konfigurasi vsftpd Setelah vsftpd sudah terinstall tanpa error, selanjutnya kita ubah file konfigurasi default di linux. Kita akan menggunakan text editor nano:
+sudo nano /etc/vsftpd.conf Masukan password karena perlu privilages sudo.]]></description>
+</item>
+</channel>
+</rss>

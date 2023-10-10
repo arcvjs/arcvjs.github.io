@@ -4,39 +4,37 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>SSH Config Debian - Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:title" content="SSH Config Debian" />
-<meta property="og:description" content="#Configurasi SSH di Linux
-Update dan Upgrade repository gunakan command apt untuk mengupdate and upgrade package yang sudah terinstall, sebagai best practice. jalankan perintah berikut di terminal linux anda.
-sudo apt update &amp;&amp; sudo apt upgrade Install openssh-server gunakan apt package manager untuk menginstall openssh-server, jalankan perintah dibawah:
-sudo apt install openssh-server -y flag -y digunakan untuk menerima konfirmasi installasi (tidak wajib).
-Jalankan sshd service setiap boot gunakan command systemctl untuk membuat sshd berjalan setiap linux di booting, jalankan perintah dibawah ini:" />
+        <title>FTP Server configuration - Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:title" content="FTP Server configuration" />
+<meta property="og:description" content="#How to configure vsftpd server in debian Dalam tutorial ini saya akan menjelaskan cara konfigurasi vsftpd. u
+Installasi vsftpd server Untuk menginstallasi vsftpd di linux, dapat menggunakan package manager apt-get, menggunakan command seperti dibawah ini:
+sudo apt-get install vsftpd Ubah file konfigurasi vsftpd Setelah vsftpd sudah terinstall tanpa error, selanjutnya kita ubah file konfigurasi default di linux. Kita akan menggunakan text editor nano:
+sudo nano /etc/vsftpd.conf Masukan password karena perlu privilages sudo." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://arcvjs.github.io/posts/networking/ssh-config/" />
-<meta property="article:published_time" content="2023-09-12T09:57:44+07:00" />
-<meta property="article:modified_time" content="2023-09-12T09:57:44+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
+<meta property="og:url" content="https://arcvjs.github.io/posts/networking/ftp-server/" />
+<meta property="article:published_time" content="2023-10-10T07:50:37+07:00" />
+<meta property="article:modified_time" content="2023-10-10T07:50:37+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="SSH Config Debian"/>
-<meta name="twitter:description" content="#Configurasi SSH di Linux
-Update dan Upgrade repository gunakan command apt untuk mengupdate and upgrade package yang sudah terinstall, sebagai best practice. jalankan perintah berikut di terminal linux anda.
-sudo apt update &amp;&amp; sudo apt upgrade Install openssh-server gunakan apt package manager untuk menginstall openssh-server, jalankan perintah dibawah:
-sudo apt install openssh-server -y flag -y digunakan untuk menerima konfirmasi installasi (tidak wajib).
-Jalankan sshd service setiap boot gunakan command systemctl untuk membuat sshd berjalan setiap linux di booting, jalankan perintah dibawah ini:"/>
+<meta name="twitter:title" content="FTP Server configuration"/>
+<meta name="twitter:description" content="#How to configure vsftpd server in debian Dalam tutorial ini saya akan menjelaskan cara konfigurasi vsftpd. u
+Installasi vsftpd server Untuk menginstallasi vsftpd di linux, dapat menggunakan package manager apt-get, menggunakan command seperti dibawah ini:
+sudo apt-get install vsftpd Ubah file konfigurasi vsftpd Setelah vsftpd sudah terinstall tanpa error, selanjutnya kita ubah file konfigurasi default di linux. Kita akan menggunakan text editor nano:
+sudo nano /etc/vsftpd.conf Masukan password karena perlu privilages sudo."/>
 <meta name="application-name" content="Arcvjs&#39;s blog">
 <meta name="apple-mobile-web-app-title" content="Arcvjs&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://arcvjs.github.io/posts/networking/ssh-config/" /><link rel="prev" href="https://arcvjs.github.io/posts/picogym/static-aint-always-noise/" /><link rel="next" href="https://arcvjs.github.io/posts/networking/ftp-server/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://arcvjs.github.io/posts/networking/ftp-server/" /><link rel="prev" href="https://arcvjs.github.io/posts/networking/ssh-config/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "SSH Config Debian",
+        "headline": "FTP Server configuration",
         "inLanguage": "en-us",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/arcvjs.github.io\/posts\/networking\/ssh-config\/"
-        },"genre": "posts","keywords": "linux, networking","wordcount":  116 ,
-        "url": "https:\/\/arcvjs.github.io\/posts\/networking\/ssh-config\/","datePublished": "2023-09-12T09:57:44+07:00","dateModified": "2023-09-12T09:57:44+07:00","publisher": {
+            "@id": "https:\/\/arcvjs.github.io\/posts\/networking\/ftp-server\/"
+        },"genre": "posts","keywords": "ftp, linux","wordcount":  208 ,
+        "url": "https:\/\/arcvjs.github.io\/posts\/networking\/ftp-server\/","datePublished": "2023-10-10T07:50:37+07:00","dateModified": "2023-10-10T07:50:37+07:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -107,9 +105,9 @@ Jalankan sshd service setiap boot gunakan command systemctl untuk membuat sshd b
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">SSH Config Debian</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">FTP Server configuration</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-09-12">2023-09-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;116 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-10-10">2023-10-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;208 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -118,52 +116,71 @@ Jalankan sshd service setiap boot gunakan command systemctl untuk membuat sshd b
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#update-dan-upgrade-repository">Update dan Upgrade repository</a></li>
-    <li><a href="#install-openssh-server">Install openssh-server</a></li>
-    <li><a href="#jalankan-sshd-service-setiap-boot">Jalankan sshd service setiap boot</a></li>
-    <li><a href="#jalankan-server-ssh">Jalankan server ssh</a></li>
+    <li><a href="#installasi-vsftpd-server">Installasi vsftpd server</a></li>
+    <li><a href="#ubah-file-konfigurasi-vsftpd">Ubah file konfigurasi vsftpd</a></li>
+    <li><a href="#restart-vsftpd-server">Restart vsftpd server</a></li>
+    <li><a href="#ubah-permission-folder">Ubah permission folder</a></li>
+    <li><a href="#buat-user-baru-khusus-ftp-tidak-wajib">Buat user baru khusus ftp (tidak wajib)</a></li>
+    <li><a href="#cek-status-server">Cek status server</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>#Configurasi SSH di Linux</p>
-<h2 id="update-dan-upgrade-repository">Update dan Upgrade repository</h2>
-<p>gunakan command apt untuk mengupdate and upgrade package yang sudah terinstall, sebagai best practice. jalankan perintah berikut di terminal linux anda.</p>
-<pre><code>sudo apt update &amp;&amp; sudo apt upgrade
-</code></pre><h2 id="install-openssh-server">Install openssh-server</h2>
-<p>gunakan apt package manager untuk menginstall openssh-server, jalankan perintah dibawah:</p>
-<pre><code>sudo apt install openssh-server -y
-</code></pre><p>flag -y digunakan untuk menerima konfirmasi installasi (tidak wajib).</p>
-<h2 id="jalankan-sshd-service-setiap-boot">Jalankan sshd service setiap boot</h2>
-<p>gunakan command systemctl untuk membuat sshd berjalan setiap linux di booting, jalankan perintah dibawah ini:</p>
-<pre><code>sudo systemctl enable ssd
-</code></pre><h2 id="jalankan-server-ssh">Jalankan server ssh</h2>
-<p>gunakan command dibawah ini untuk menjalankan ssh:</p>
-<pre><code>sudo systemctl start sshd
-</code></pre><p>untuk memastikan ssh berjalan gunakan perintah:</p>
-<pre><code>sudo systemctl status sshd
-</code></pre><p>sekian tutorial singkat saya, semoga membantu.</p>
+            </div><div class="content" id="content"><p>#How to configure vsftpd server in debian
+Dalam tutorial ini saya akan menjelaskan cara konfigurasi vsftpd.
+u</p>
+<h2 id="installasi-vsftpd-server">Installasi vsftpd server</h2>
+<p>Untuk menginstallasi vsftpd di linux, dapat menggunakan package manager apt-get, menggunakan command seperti dibawah ini:</p>
+<pre><code>sudo apt-get install vsftpd
+</code></pre><h2 id="ubah-file-konfigurasi-vsftpd">Ubah file konfigurasi vsftpd</h2>
+<p>Setelah vsftpd sudah terinstall tanpa error, selanjutnya kita ubah file konfigurasi default di linux. Kita akan menggunakan text editor nano:</p>
+<pre><code>sudo nano /etc/vsftpd.conf
+</code></pre><p>Masukan password karena perlu privilages sudo.</p>
+<p>lalu jika file sudah dibuka kita perlu menambahkan teks konfigurasi seperti dibawah:</p>
+<pre><code>local_root=/home/$USER/ftp
+user_sub_token=$USER
+local_enable=YES
+write_enable=YESa
+chroot_local_user=YES
+</code></pre><p>Diperhatikan jika ingin menrgubah lokasi folder ftp di linux, kita bisa menganti local_root.</p>
+<h2 id="restart-vsftpd-server">Restart vsftpd server</h2>
+<p>setelah dikonfigurasi sekarang kita bisa merestart server kita, jika menggunakan debian 11:</p>
+<pre><code>sudo service vsftpd restart
+</code></pre><p>jika service tidak ditemukan maka gunakan command ini:</p>
+<pre><code>sudo systemctl restart vsftpd
+</code></pre><h2 id="ubah-permission-folder">Ubah permission folder</h2>
+<p>ubah permission folder ftp dengan command ini:</p>
+<pre><code>sudo chmod -R 755 /home/user/ftp
+</code></pre><p>ubah user sesuai dengan nama pengguna kita.</p>
+<h2 id="buat-user-baru-khusus-ftp-tidak-wajib">Buat user baru khusus ftp (tidak wajib)</h2>
+<p>jika kita ingin membuat custom user untuk ftp saja, gunakan command ini:</p>
+<pre><code>sudo useradd -m -d /path/to/custom/folder -s /bin/bash ftpuser
+sudo passwd ftpuser
+</code></pre><p>/path/to/custom/folder diganti dengan path ke folder ftp yang kita pakai.</p>
+<h2 id="cek-status-server">Cek status server</h2>
+<p>gunakan command:</p>
+<pre><code>sudo systemctl status vsftpd
+</code></pre><p>Sekian tutorial saya terimakasih.</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2023-09-12</span>
+                <span>Updated on 2023-10-10</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://arcvjs.github.io/posts/networking/ssh-config/" data-title="SSH Config Debian" data-hashtags="linux,networking"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://arcvjs.github.io/posts/networking/ssh-config/" data-title="SSH Config Debian"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://arcvjs.github.io/posts/networking/ssh-config/" data-title="SSH Config Debian"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://arcvjs.github.io/posts/networking/ftp-server/" data-title="FTP Server configuration" data-hashtags="ftp,linux"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://arcvjs.github.io/posts/networking/ftp-server/" data-title="FTP Server configuration"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://arcvjs.github.io/posts/networking/ftp-server/" data-title="FTP Server configuration"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/networking/">networking</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ftp/">ftp</a>,&nbsp;<a href="/tags/linux/">linux</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/picogym/static-aint-always-noise/" class="prev" rel="prev" title="Static Aint Always Noise"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Static Aint Always Noise</a>
-            <a href="/posts/networking/ftp-server/" class="next" rel="next" title="FTP Server configuration">FTP Server configuration<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/networking/ssh-config/" class="prev" rel="prev" title="SSH Config Debian"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>SSH Config Debian</a></div>
 </div>
 </article></div>
             </main><footer class="footer">
