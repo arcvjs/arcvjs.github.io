@@ -9,7 +9,7 @@
 <meta property="og:description" content="blogs, others" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://arcvjs.github.io/" />
-<meta property="og:updated_time" content="2023-10-10T08:12:20+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
+<meta property="og:updated_time" content="2023-10-31T11:00:04+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Arcvjs&#39;s blog"/>
 <meta name="twitter:description" content="blogs, others"/>
@@ -88,6 +88,14 @@
     </div><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/arcvjs" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/networking/proxy-server/">Proxy Server</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-31">2023-10-31</time></span></div><div class="content">How to isntall &amp; do simple configuration of Squid&rsquo;s Proxy server on linux Installing squid sudo apt update -y &amp;&amp; sudo apt install squid first we install the squid proxy application. and all of its dependencies.
+Configuring the proxy server the configuration file is located in /etc/squid/squid.conf we can edit it using nano
+sudo nano /etc/squid/squid.conf now we need to allow http, as the default configuration forbid it.
+http_access allow all change deny to allow.</div><div class="post-footer">
+        <a href="/posts/networking/proxy-server/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/proxy/">proxy</a>,&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/debian/">debian</a>,&nbsp;<a href="/tags/networking/">networking</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/networking/dns-server/">DNS Server konfigurasi menggunakan bind9</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-10">2023-10-10</time></span></div><div class="content">Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
 sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
@@ -129,13 +137,6 @@ Jalankan sshd service setiap boot gunakan command systemctl untuk membuat sshd b
 use the command:
 strings static | grep pico{ flag: picoCTF{d15a5m_t34s3r_f6c48608}</div><div class="post-footer">
         <a href="/posts/picogym/static-aint-always-noise/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/picogym/mind-your-ps-and-qs/">Mind Your Ps and Qs</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-10-02">2022-10-02</time></span></div><div class="content">Mind Your Ps and Qs picoGym writeup. Challenges In RSA, a small e value can be problematic, but what about N? Can you decrypt this?
-File given: values
-values: c= 8533139361076999596208540806559574687666062896040360148742851107661304651861689 n= 769457290801263793712740792519696786147248001937382943813345728685422050738403253 e= 65537 Explaination RSA is an asymmetric cryptographic algorithm. It is called asymmetric because there are 2 keys. Public key are used to encrypt the clear text. Private key on the other hand are used to decrypt the encrypted text.</div><div class="post-footer">
-        <a href="/posts/picogym/mind-your-ps-and-qs/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cryptography/">cryptography</a>,&nbsp;<a href="/tags/rsa/">RSA</a></div></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>

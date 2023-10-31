@@ -3,20 +3,44 @@
         <title>Tags - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/</link>
         <description>Tags - Tag - Arcvjs&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/" rel="self" type="application/rss+xml" /><item>
-    <title>DNS</title>
-    <link>https://arcvjs.github.io/tags/dns/</link>
-    <pubDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>debian</title>
+    <link>https://arcvjs.github.io/tags/debian/</link>
+    <pubDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</pubDate>
     <author>Author</author>
-    <guid>https://arcvjs.github.io/tags/dns/</guid>
+    <guid>https://arcvjs.github.io/tags/debian/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>linux</title>
     <link>https://arcvjs.github.io/tags/linux/</link>
-    <pubDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</pubDate>
+    <pubDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</pubDate>
     <author>Author</author>
     <guid>https://arcvjs.github.io/tags/linux/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>networking</title>
+    <link>https://arcvjs.github.io/tags/networking/</link>
+    <pubDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://arcvjs.github.io/tags/networking/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>proxy</title>
+    <link>https://arcvjs.github.io/tags/proxy/</link>
+    <pubDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://arcvjs.github.io/tags/proxy/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>DNS</title>
+    <link>https://arcvjs.github.io/tags/dns/</link>
+    <pubDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://arcvjs.github.io/tags/dns/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -33,14 +57,6 @@
     <pubDate>Tue, 10 Oct 2023 07:50:37 &#43;0700</pubDate>
     <author>Author</author>
     <guid>https://arcvjs.github.io/tags/ftp/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>networking</title>
-    <link>https://arcvjs.github.io/tags/networking/</link>
-    <pubDate>Tue, 12 Sep 2023 09:57:44 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://arcvjs.github.io/tags/networking/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -65,22 +81,6 @@
     <pubDate>Fri, 30 Sep 2022 20:38:18 &#43;0700</pubDate>
     <author>Author</author>
     <guid>https://arcvjs.github.io/tags/forensics/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>ctf</title>
-    <link>https://arcvjs.github.io/tags/ctf/</link>
-    <pubDate>Sat, 20 Aug 2022 09:46:34 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://arcvjs.github.io/tags/ctf/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>json</title>
-    <link>https://arcvjs.github.io/tags/json/</link>
-    <pubDate>Sat, 06 Aug 2022 11:07:52 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://arcvjs.github.io/tags/json/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

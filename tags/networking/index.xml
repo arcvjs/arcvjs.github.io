@@ -3,7 +3,18 @@
         <title>networking - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/networking/</link>
         <description>networking - Tag - Arcvjs&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 12 Sep 2023 09:57:44 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/networking/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/networking/" rel="self" type="application/rss+xml" /><item>
+    <title>Proxy Server</title>
+    <link>https://arcvjs.github.io/posts/networking/proxy-server/</link>
+    <pubDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/proxy-server/</guid>
+    <description><![CDATA[How to isntall &amp; do simple configuration of Squid&rsquo;s Proxy server on linux Installing squid sudo apt update -y &amp;&amp; sudo apt install squid first we install the squid proxy application. and all of its dependencies.
+Configuring the proxy server the configuration file is located in /etc/squid/squid.conf we can edit it using nano
+sudo nano /etc/squid/squid.conf now we need to allow http, as the default configuration forbid it.
+http_access allow all change deny to allow.]]></description>
+</item>
+<item>
     <title>SSH Config Debian</title>
     <link>https://arcvjs.github.io/posts/networking/ssh-config/</link>
     <pubDate>Tue, 12 Sep 2023 09:57:44 &#43;0700</pubDate>
