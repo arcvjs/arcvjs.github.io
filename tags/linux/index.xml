@@ -16,19 +16,6 @@ http_access allow all change deny to allow.]]></description>
 </item>
 <item>
     <title>DNS Server konfigurasi menggunakan bind9</title>
-    <link>https://arcvjs.github.io/posts/networking/dns-server-dearly/</link>
-    <pubDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</pubDate>
-    <author>James S</author>
-    <guid>https://arcvjs.github.io/posts/networking/dns-server-dearly/</guid>
-    <description><![CDATA[Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
-sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
-sudo nano /etc/bind/named.conf.local isi file dengan:
-zone &quot;dearly.com&quot; { type master; file &quot;/etc/bind/db.dearly.com&quot;; # Path to the zone file }; ubah dearly.com dengan domain yang kita mau.
-sekarang kita buat file db.dearly.com
-sesuaikan dengan apa yang ditulis di named.conf.local]]></description>
-</item>
-<item>
-    <title>DNS Server konfigurasi menggunakan bind9</title>
     <link>https://arcvjs.github.io/posts/networking/dns-server/</link>
     <pubDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</pubDate>
     <author>James S</author>

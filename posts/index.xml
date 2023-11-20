@@ -16,19 +16,6 @@ http_access allow all change deny to allow.]]></description>
 </item>
 <item>
     <title>DNS Server konfigurasi menggunakan bind9</title>
-    <link>https://arcvjs.github.io/posts/networking/dns-server-dearly/</link>
-    <pubDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</pubDate>
-    <author>James S</author>
-    <guid>https://arcvjs.github.io/posts/networking/dns-server-dearly/</guid>
-    <description><![CDATA[Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
-sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
-sudo nano /etc/bind/named.conf.local isi file dengan:
-zone &quot;dearly.com&quot; { type master; file &quot;/etc/bind/db.dearly.com&quot;; # Path to the zone file }; ubah dearly.com dengan domain yang kita mau.
-sekarang kita buat file db.dearly.com
-sesuaikan dengan apa yang ditulis di named.conf.local]]></description>
-</item>
-<item>
-    <title>DNS Server konfigurasi menggunakan bind9</title>
     <link>https://arcvjs.github.io/posts/networking/dns-server/</link>
     <pubDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</pubDate>
     <author>James S</author>
@@ -114,6 +101,14 @@ To view the metadata of an images, you can use a tool called exiftool. To instal
     <description><![CDATA[Pickle Rick TryHackMe Writeup This is a blog on how i solved Pickle Rick room on tryhackme. Note that i use linux. First i put the machine IP into env using the export command.
 export IP=(your target machine&#39;s IP addres) Enum Nmap I did a simple nmap scan on the server:
 nmap -sCV -oN nmap-init.log $IP -sCV is for using the default scripts and check for services version on the machine.]]></description>
+</item>
+<item>
+    <title>Postman CryptoburstCTF 2022 writeup</title>
+    <link>https://arcvjs.github.io/posts/ctf/cryptoburst/postman/</link>
+    <pubDate>Sat, 20 Aug 2022 09:46:34 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/ctf/cryptoburst/postman/</guid>
+    <description><![CDATA[Postman - cryptoburst ctf 2022 writeups we were given the image first i tried searching for postman qr. Found no result. then, i tried reverse searching with google images. i found a similar images, from a website explaining types of barcode. https://www.dynamsoft.com/blog/insights/the-comprehensive-guide-to-1d-and-2d-barcodes/ the name of the barcodes are MaxiCode. It was used by UPS so the name Postman makes sense. Now it just comes down to reading the qr. After some browsing i found an online tool for reading.]]></description>
 </item>
 </channel>
 </rss>
