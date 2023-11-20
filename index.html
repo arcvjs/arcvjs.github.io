@@ -96,6 +96,16 @@ http_access allow all change deny to allow.</div><div class="post-footer">
         <a href="/posts/networking/proxy-server/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/proxy/">proxy</a>,&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/debian/">debian</a>,&nbsp;<a href="/tags/networking/">networking</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/networking/dns-server-dearly/">DNS Server konfigurasi menggunakan bind9</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-10">2023-10-10</time></span></div><div class="content">Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
+sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
+sudo nano /etc/bind/named.conf.local isi file dengan:
+zone &quot;dearly.com&quot; { type master; file &quot;/etc/bind/db.dearly.com&quot;; # Path to the zone file }; ubah dearly.com dengan domain yang kita mau.
+sekarang kita buat file db.dearly.com
+sesuaikan dengan apa yang ditulis di named.conf.local</div><div class="post-footer">
+        <a href="/posts/networking/dns-server-dearly/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/dns/">DNS</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/networking/dns-server/">DNS Server konfigurasi menggunakan bind9</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-10">2023-10-10</time></span></div><div class="content">Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
 sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
@@ -131,12 +141,6 @@ sudo apt install openssh-server -y flag -y digunakan untuk menerima konfirmasi i
 Jalankan sshd service setiap boot gunakan command systemctl untuk membuat sshd berjalan setiap linux di booting, jalankan perintah dibawah ini:</div><div class="post-footer">
         <a href="/posts/networking/ssh-config/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/networking/">networking</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/picogym/static-aint-always-noise/">Static Aint Always Noise</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-10-15">2022-10-15</time></span></div><div class="content">Static Ain&rsquo;t Always Noise Picogym writeups. we we&rsquo;re given two files. static and ltdis.sh . static is filled with binary data. so i tried to print all readables character in it with the command string. and after a little bit of scrolling i found the flag.
-use the command:
-strings static | grep pico{ flag: picoCTF{d15a5m_t34s3r_f6c48608}</div><div class="post-footer">
-        <a href="/posts/picogym/static-aint-always-noise/">Read More</a></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>
