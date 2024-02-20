@@ -1,9 +1,41 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>linux - Tag - Arcvjs&#39;s blog</title>
+        <title>Linux - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/linux/</link>
-        <description>linux - Tag - Arcvjs&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/linux/" rel="self" type="application/rss+xml" /><item>
+        <description>Linux - Tag - Arcvjs&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Database</title>
+    <link>https://arcvjs.github.io/posts/networking/database/</link>
+    <pubDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/database/</guid>
+    <description><![CDATA[Install database MySQL di linux dan membuat relation antar tables Update &amp; upgrade server sudo apt update lalu
+sudo apt upgrade Install mariadb sql server &amp; client untuk install sql server
+sudo apt install mariadb-server ```bash untuk install sql client ```bash sudo apt install mariadb-client start database server sudo systemctl start mariadb Login the database sudo mysql -u root gunakan sudo sehingga kita tidak perlu memasukan password
+buat database baru CREATE DATABASE User; pilih database itu dengan]]></description>
+</item>
+<item>
+    <title>Web Server</title>
+    <link>https://arcvjs.github.io/posts/networking/web-server/</link>
+    <pubDate>Tue, 20 Feb 2024 08:22:00 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/web-server/</guid>
+    <description><![CDATA[Cara install apache2 Web Server Linux Update &amp; upgrade system sudo apt update sudo apt upgrade install apache2 sudo apt install apache2 start server apache2 sudo systemctl start apache2 enable server apache2 on boot sudo systemctl enable apache2 Stop webserver sudo systemctl stop apache2 Disable apache2 on boot sudo systemctl disable apache2 ]]></description>
+</item>
+<item>
+    <title>File Server</title>
+    <link>https://arcvjs.github.io/posts/networking/file-server/</link>
+    <pubDate>Tue, 20 Feb 2024 08:11:12 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/file-server/</guid>
+    <description><![CDATA[How to setup file server on Debian / Ubuntu based distribution. Intalling Samba. Pertama kita mulai dengan menginstall samba menggunakan apt, sebelum itu update dan upgrade apt terlebih dulu.
+sudo apt update &amp;&amp; sudo apt upgrade lalu&hellip;
+sudo apt install samba tunggu hingga terinstall.
+Buat folder share ( Samba) Selanjutnya kita buat folder Sambda yang untuk di share.
+sudo mkdir -p /var/samba/public lalu ubah permission dari folder tersebut.
+sudo chmod 777 /var/samba/public Konfigurasi samba.]]></description>
+</item>
+<item>
     <title>Proxy Server</title>
     <link>https://arcvjs.github.io/posts/networking/proxy-server/</link>
     <pubDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</pubDate>
@@ -23,7 +55,7 @@ http_access allow all change deny to allow.]]></description>
     <description><![CDATA[Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
 sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
 sudo nano /etc/bind/named.conf.local isi file dengan:
-zone &quot;james.com&quot; { type master; file &quot;/etc/bind/db.james.com&quot;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
+zone &#34;james.com&#34; { type master; file &#34;/etc/bind/db.james.com&#34;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
 sekarang kita buat file db.james.com
 sesuaikan dengan apa yang ditulis di named.conf.local]]></description>
 </item>

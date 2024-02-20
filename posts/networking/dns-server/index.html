@@ -8,11 +8,11 @@
 <meta property="og:description" content="Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
 sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
 sudo nano /etc/bind/named.conf.local isi file dengan:
-zone &quot;james.com&quot; { type master; file &quot;/etc/bind/db.james.com&quot;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
+zone &#34;james.com&#34; { type master; file &#34;/etc/bind/db.james.com&#34;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
 sekarang kita buat file db.james.com
 sesuaikan dengan apa yang ditulis di named.conf.local" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://arcvjs.github.io/posts/networking/dns-server/" />
+<meta property="og:url" content="https://arcvjs.github.io/posts/networking/dns-server/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-10-10T08:12:20+07:00" />
 <meta property="article:modified_time" content="2023-10-10T08:12:20+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
 <meta name="twitter:card" content="summary"/>
@@ -20,7 +20,7 @@ sesuaikan dengan apa yang ditulis di named.conf.local" />
 <meta name="twitter:description" content="Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
 sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
 sudo nano /etc/bind/named.conf.local isi file dengan:
-zone &quot;james.com&quot; { type master; file &quot;/etc/bind/db.james.com&quot;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
+zone &#34;james.com&#34; { type master; file &#34;/etc/bind/db.james.com&#34;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
 sekarang kita buat file db.james.com
 sesuaikan dengan apa yang ditulis di named.conf.local"/>
 <meta name="application-name" content="Arcvjs&#39;s blog">
@@ -128,22 +128,22 @@ sesuaikan dengan apa yang ditulis di named.conf.local"/>
             </div><div class="content" id="content"><h1 id="tutorial-konfigurasi-dns-server-di-linux">Tutorial konfigurasi dns server di linux</h1>
 <h2 id="installl-bind9">installl bind9</h2>
 <p>untuk installasi bind9 server di linux gunakan command ini:</p>
-<pre><code>sudo apt-get update
+<pre tabindex="0"><code>sudo apt-get update
 sudo apt-get install bind9
 </code></pre><h2 id="konfigurasi">Konfigurasi</h2>
 <p>pertama2 ubah dan buat file named.conf.local:</p>
-<pre><code>sudo nano /etc/bind/named.conf.local
+<pre tabindex="0"><code>sudo nano /etc/bind/named.conf.local
 </code></pre><p>isi file dengan:</p>
-<pre><code>zone &quot;james.com&quot; {
+<pre tabindex="0"><code>zone &#34;james.com&#34; {
     type master;
-    file &quot;/etc/bind/db.james.com&quot;; # Path to the zone file
+    file &#34;/etc/bind/db.james.com&#34;; # Path to the zone file
 };
 </code></pre><p>ubah james.com dengan domain yang kita mau.</p>
 <p>sekarang kita buat file db.james.com</p>
 <p>sesuaikan dengan apa yang ditulis di named.conf.local</p>
-<pre><code>sudo nano /etc/bind/db.james.com
+<pre tabindex="0"><code>sudo nano /etc/bind/db.james.com
 </code></pre><p>isi file seperti ini:</p>
-<pre><code>$TTL 1h
+<pre tabindex="0"><code>$TTL 1h
 @       IN      SOA     ns1.james.com. admin.james.com. (
                     2023100301 ; Serial
                     1h         ; Refresh
@@ -157,7 +157,7 @@ sudo apt-get install bind9
 </code></pre><p>ubah ip yang ada dengan target ip yang anda mau.</p>
 <h2 id="restart-server">Restart server</h2>
 <p>gunakan command ini untuk restart server dns</p>
-<pre><code>sudo service bind9 restart
+<pre tabindex="0"><code>sudo service bind9 restart
 </code></pre><p>sekian terimakasih</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
@@ -174,7 +174,7 @@ sudo apt-get install bind9
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/dns/">DNS</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/dns/">DNS</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
@@ -185,7 +185,7 @@ sudo apt-get install bind9
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
         </div>
     </footer></div>
 

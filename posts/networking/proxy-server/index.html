@@ -10,7 +10,7 @@ Configuring the proxy server the configuration file is located in /etc/squid/squ
 sudo nano /etc/squid/squid.conf now we need to allow http, as the default configuration forbid it.
 http_access allow all change deny to allow." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://arcvjs.github.io/posts/networking/proxy-server/" />
+<meta property="og:url" content="https://arcvjs.github.io/posts/networking/proxy-server/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-10-31T11:00:04+07:00" />
 <meta property="article:modified_time" content="2023-10-31T11:00:04+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
 <meta name="twitter:card" content="summary"/>
@@ -22,7 +22,7 @@ http_access allow all change deny to allow."/>
 <meta name="application-name" content="Arcvjs&#39;s blog">
 <meta name="apple-mobile-web-app-title" content="Arcvjs&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://arcvjs.github.io/posts/networking/proxy-server/" /><link rel="prev" href="https://arcvjs.github.io/posts/networking/dns-server/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://arcvjs.github.io/posts/networking/proxy-server/" /><link rel="prev" href="https://arcvjs.github.io/posts/networking/dns-server/" /><link rel="next" href="https://arcvjs.github.io/posts/networking/file-server/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -125,28 +125,28 @@ http_access allow all change deny to allow."/>
 </nav></div>
             </div><div class="content" id="content"><h1 id="how-to-isntall--do-simple-configuration-of-squids-proxy-server-on-linux">How to isntall &amp; do simple configuration of Squid&rsquo;s Proxy server on linux</h1>
 <h2 id="installing-squid">Installing squid</h2>
-<pre><code>sudo apt update -y &amp;&amp; sudo apt install squid
+<pre tabindex="0"><code>sudo apt update -y &amp;&amp; sudo apt install squid
 </code></pre><p>first we install the squid proxy application.
 and all of its dependencies.</p>
 <h2 id="configuring-the-proxy-server">Configuring the proxy server</h2>
 <p>the configuration file is located in /etc/squid/squid.conf
 we can edit it using nano</p>
-<pre><code>sudo nano /etc/squid/squid.conf
+<pre tabindex="0"><code>sudo nano /etc/squid/squid.conf
 </code></pre><p>now we need to allow http, as the default configuration forbid it.</p>
-<pre><code>http_access allow all
+<pre tabindex="0"><code>http_access allow all
 </code></pre><p>change deny to allow.</p>
 <h2 id="restarting-the-service">Restarting the service</h2>
 <p>after changing the conf file and saving it we need to restart the service</p>
-<pre><code>sudo systemctl restart squid.service
+<pre tabindex="0"><code>sudo systemctl restart squid.service
 </code></pre><p>wait because it may take a while.
 make a new firewall rules if there is one.</p>
 <h2 id="blocking-a-certain-website">blocking a certain website</h2>
 <p>if you want to block a certain website using proxy conf.
 follow this step
 write this below</p>
-<pre><code>acl blocked_site dstdomain .kompas.com
+<pre tabindex="0"><code>acl blocked_site dstdomain .kompas.com
 </code></pre><p>then block it using by adding this below it</p>
-<pre><code>http_access deny blocked_site
+<pre tabindex="0"><code>http_access deny blocked_site
 </code></pre><h2 id="using-the-proxy">Using the proxy</h2>
 <p>open your browser, setting, proxy then add 127.0.0.1 and the default server 3128 then ok
 test the proxy by visiting the web in which you have blocked and see if it is enforced.</p>
@@ -165,17 +165,18 @@ test the proxy by visiting the web in which you have blocked and see if it is en
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/proxy/">proxy</a>,&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/debian/">debian</a>,&nbsp;<a href="/tags/networking/">networking</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/proxy/">proxy</a>,&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/debian/">debian</a>,&nbsp;<a href="/tags/networking/">networking</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/networking/dns-server/" class="prev" rel="prev" title="DNS Server konfigurasi menggunakan bind9"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>DNS Server konfigurasi menggunakan bind9</a></div>
+    <div class="post-nav"><a href="/posts/networking/dns-server/" class="prev" rel="prev" title="DNS Server konfigurasi menggunakan bind9"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>DNS Server konfigurasi menggunakan bind9</a>
+            <a href="/posts/networking/file-server/" class="next" rel="next" title="File Server">File Server<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
         </div>
     </footer></div>
 

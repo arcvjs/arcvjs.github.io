@@ -3,20 +3,60 @@
         <title>Tags - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/</link>
         <description>Tags - Tag - Arcvjs&#39;s blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>CLI</title>
+    <link>https://arcvjs.github.io/tags/cli/</link>
+    <pubDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://arcvjs.github.io/tags/cli/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Linux</title>
+    <link>https://arcvjs.github.io/tags/linux/</link>
+    <pubDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://arcvjs.github.io/tags/linux/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>SQL</title>
+    <link>https://arcvjs.github.io/tags/sql/</link>
+    <pubDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://arcvjs.github.io/tags/sql/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>apache</title>
+    <link>https://arcvjs.github.io/tags/apache/</link>
+    <pubDate>Tue, 20 Feb 2024 08:22:00 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://arcvjs.github.io/tags/apache/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>file</title>
+    <link>https://arcvjs.github.io/tags/file/</link>
+    <pubDate>Tue, 20 Feb 2024 08:11:12 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://arcvjs.github.io/tags/file/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>samba</title>
+    <link>https://arcvjs.github.io/tags/samba/</link>
+    <pubDate>Tue, 20 Feb 2024 08:11:12 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://arcvjs.github.io/tags/samba/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>debian</title>
     <link>https://arcvjs.github.io/tags/debian/</link>
     <pubDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</pubDate>
     <author>Author</author>
     <guid>https://arcvjs.github.io/tags/debian/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>linux</title>
-    <link>https://arcvjs.github.io/tags/linux/</link>
-    <pubDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://arcvjs.github.io/tags/linux/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -41,46 +81,6 @@
     <pubDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</pubDate>
     <author>Author</author>
     <guid>https://arcvjs.github.io/tags/dns/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>dchp</title>
-    <link>https://arcvjs.github.io/tags/dchp/</link>
-    <pubDate>Tue, 10 Oct 2023 08:12:15 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://arcvjs.github.io/tags/dchp/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>ftp</title>
-    <link>https://arcvjs.github.io/tags/ftp/</link>
-    <pubDate>Tue, 10 Oct 2023 07:50:37 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://arcvjs.github.io/tags/ftp/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>cryptography</title>
-    <link>https://arcvjs.github.io/tags/cryptography/</link>
-    <pubDate>Sun, 02 Oct 2022 10:45:34 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://arcvjs.github.io/tags/cryptography/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>RSA</title>
-    <link>https://arcvjs.github.io/tags/rsa/</link>
-    <pubDate>Sun, 02 Oct 2022 10:45:34 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://arcvjs.github.io/tags/rsa/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>forensics</title>
-    <link>https://arcvjs.github.io/tags/forensics/</link>
-    <pubDate>Fri, 30 Sep 2022 20:38:18 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://arcvjs.github.io/tags/forensics/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

@@ -3,9 +3,41 @@
         <title>Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/</link>
         <description>blogs, others</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</lastBuildDate>
             <atom:link href="https://arcvjs.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Database</title>
+    <link>https://arcvjs.github.io/posts/networking/database/</link>
+    <pubDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/database/</guid>
+    <description><![CDATA[Install database MySQL di linux dan membuat relation antar tables Update &amp; upgrade server sudo apt update lalu
+sudo apt upgrade Install mariadb sql server &amp; client untuk install sql server
+sudo apt install mariadb-server ```bash untuk install sql client ```bash sudo apt install mariadb-client start database server sudo systemctl start mariadb Login the database sudo mysql -u root gunakan sudo sehingga kita tidak perlu memasukan password
+buat database baru CREATE DATABASE User; pilih database itu dengan]]></description>
+</item>
+<item>
+    <title>Web Server</title>
+    <link>https://arcvjs.github.io/posts/networking/web-server/</link>
+    <pubDate>Tue, 20 Feb 2024 08:22:00 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/web-server/</guid>
+    <description><![CDATA[Cara install apache2 Web Server Linux Update &amp; upgrade system sudo apt update sudo apt upgrade install apache2 sudo apt install apache2 start server apache2 sudo systemctl start apache2 enable server apache2 on boot sudo systemctl enable apache2 Stop webserver sudo systemctl stop apache2 Disable apache2 on boot sudo systemctl disable apache2 ]]></description>
+</item>
+<item>
+    <title>File Server</title>
+    <link>https://arcvjs.github.io/posts/networking/file-server/</link>
+    <pubDate>Tue, 20 Feb 2024 08:11:12 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/file-server/</guid>
+    <description><![CDATA[How to setup file server on Debian / Ubuntu based distribution. Intalling Samba. Pertama kita mulai dengan menginstall samba menggunakan apt, sebelum itu update dan upgrade apt terlebih dulu.
+sudo apt update &amp;&amp; sudo apt upgrade lalu&hellip;
+sudo apt install samba tunggu hingga terinstall.
+Buat folder share ( Samba) Selanjutnya kita buat folder Sambda yang untuk di share.
+sudo mkdir -p /var/samba/public lalu ubah permission dari folder tersebut.
+sudo chmod 777 /var/samba/public Konfigurasi samba.]]></description>
+</item>
+<item>
     <title>Proxy Server</title>
     <link>https://arcvjs.github.io/posts/networking/proxy-server/</link>
     <pubDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</pubDate>
@@ -25,7 +57,7 @@ http_access allow all change deny to allow.]]></description>
     <description><![CDATA[Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
 sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
 sudo nano /etc/bind/named.conf.local isi file dengan:
-zone &quot;james.com&quot; { type master; file &quot;/etc/bind/db.james.com&quot;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
+zone &#34;james.com&#34; { type master; file &#34;/etc/bind/db.james.com&#34;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
 sekarang kita buat file db.james.com
 sesuaikan dengan apa yang ditulis di named.conf.local]]></description>
 </item>
@@ -83,34 +115,6 @@ strings static | grep pico{ flag: picoCTF{d15a5m_t34s3r_f6c48608}]]></descriptio
     <description><![CDATA[Mind Your Ps and Qs picoGym writeup. Challenges In RSA, a small e value can be problematic, but what about N? Can you decrypt this?
 File given: values
 values: c= 8533139361076999596208540806559574687666062896040360148742851107661304651861689 n= 769457290801263793712740792519696786147248001937382943813345728685422050738403253 e= 65537 Explaination RSA is an asymmetric cryptographic algorithm. It is called asymmetric because there are 2 keys. Public key are used to encrypt the clear text. Private key on the other hand are used to decrypt the encrypted text.]]></description>
-</item>
-<item>
-    <title>Information</title>
-    <link>https://arcvjs.github.io/posts/picogym/information/</link>
-    <pubDate>Fri, 30 Sep 2022 20:38:18 &#43;0700</pubDate>
-    <author>James S</author>
-    <guid>https://arcvjs.github.io/posts/picogym/information/</guid>
-    <description><![CDATA[Information Picogym Writeups Files can always be changed in a secret way. Can you find the flag?
-We were given the file cat.jpg. There&rsquo;s something called a metadata on some images. Metadata stores basic information about the images. Such as author, time when the picture was taken, color profiles, and many more.
-To view the metadata of an images, you can use a tool called exiftool. To install it on Ubuntu or other Debian based system you can use the command: sudo apt install exiftool Or if you are on a arch based system you can use the command: sudo pacman -S perl-image-exiftool Alternatively you can use an online tool to view metadatas.]]></description>
-</item>
-<item>
-    <title>Pickle Rick TryHackMe Writeup</title>
-    <link>https://arcvjs.github.io/posts/tryhackme/pickle-rick-tryhackme-writeup/</link>
-    <pubDate>Sun, 11 Sep 2022 22:49:54 &#43;0700</pubDate>
-    <author>James S</author>
-    <guid>https://arcvjs.github.io/posts/tryhackme/pickle-rick-tryhackme-writeup/</guid>
-    <description><![CDATA[Pickle Rick TryHackMe Writeup This is a blog on how i solved Pickle Rick room on tryhackme. Note that i use linux. First i put the machine IP into env using the export command.
-export IP=(your target machine&#39;s IP addres) Enum Nmap I did a simple nmap scan on the server:
-nmap -sCV -oN nmap-init.log $IP -sCV is for using the default scripts and check for services version on the machine.]]></description>
-</item>
-<item>
-    <title>Postman CryptoburstCTF 2022 writeup</title>
-    <link>https://arcvjs.github.io/posts/ctf/cryptoburst/postman/</link>
-    <pubDate>Sat, 20 Aug 2022 09:46:34 &#43;0700</pubDate>
-    <author>James S</author>
-    <guid>https://arcvjs.github.io/posts/ctf/cryptoburst/postman/</guid>
-    <description><![CDATA[Postman - cryptoburst ctf 2022 writeups we were given the image first i tried searching for postman qr. Found no result. then, i tried reverse searching with google images. i found a similar images, from a website explaining types of barcode. https://www.dynamsoft.com/blog/insights/the-comprehensive-guide-to-1d-and-2d-barcodes/ the name of the barcodes are MaxiCode. It was used by UPS so the name Postman makes sense. Now it just comes down to reading the qr. After some browsing i found an online tool for reading.]]></description>
 </item>
 </channel>
 </rss>

@@ -12,7 +12,7 @@
     <description><![CDATA[Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
 sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
 sudo nano /etc/bind/named.conf.local isi file dengan:
-zone &quot;james.com&quot; { type master; file &quot;/etc/bind/db.james.com&quot;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
+zone &#34;james.com&#34; { type master; file &#34;/etc/bind/db.james.com&#34;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
 sekarang kita buat file db.james.com
 sesuaikan dengan apa yang ditulis di named.conf.local]]></description>
 </item>

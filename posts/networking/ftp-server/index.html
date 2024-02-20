@@ -10,7 +10,7 @@ Installasi vsftpd server Untuk menginstallasi vsftpd di linux, dapat menggunakan
 sudo apt-get install vsftpd Ubah file konfigurasi vsftpd Setelah vsftpd sudah terinstall tanpa error, selanjutnya kita ubah file konfigurasi default di linux. Kita akan menggunakan text editor nano:
 sudo nano /etc/vsftpd.conf Masukan password karena perlu privilages sudo." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://arcvjs.github.io/posts/networking/ftp-server/" />
+<meta property="og:url" content="https://arcvjs.github.io/posts/networking/ftp-server/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-10-10T07:50:37+07:00" />
 <meta property="article:modified_time" content="2023-10-10T07:50:37+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
 <meta name="twitter:card" content="summary"/>
@@ -129,13 +129,13 @@ Dalam tutorial ini saya akan menjelaskan cara konfigurasi vsftpd.
 u</p>
 <h2 id="installasi-vsftpd-server">Installasi vsftpd server</h2>
 <p>Untuk menginstallasi vsftpd di linux, dapat menggunakan package manager apt-get, menggunakan command seperti dibawah ini:</p>
-<pre><code>sudo apt-get install vsftpd
+<pre tabindex="0"><code>sudo apt-get install vsftpd
 </code></pre><h2 id="ubah-file-konfigurasi-vsftpd">Ubah file konfigurasi vsftpd</h2>
 <p>Setelah vsftpd sudah terinstall tanpa error, selanjutnya kita ubah file konfigurasi default di linux. Kita akan menggunakan text editor nano:</p>
-<pre><code>sudo nano /etc/vsftpd.conf
+<pre tabindex="0"><code>sudo nano /etc/vsftpd.conf
 </code></pre><p>Masukan password karena perlu privilages sudo.</p>
 <p>lalu jika file sudah dibuka kita perlu menambahkan teks konfigurasi seperti dibawah:</p>
-<pre><code>local_root=/home/$USER/ftp
+<pre tabindex="0"><code>local_root=/home/$USER/ftp
 user_sub_token=$USER
 local_enable=YES
 write_enable=YESa
@@ -143,21 +143,21 @@ chroot_local_user=YES
 </code></pre><p>Diperhatikan jika ingin menrgubah lokasi folder ftp di linux, kita bisa menganti local_root.</p>
 <h2 id="restart-vsftpd-server">Restart vsftpd server</h2>
 <p>setelah dikonfigurasi sekarang kita bisa merestart server kita, jika menggunakan debian 11:</p>
-<pre><code>sudo service vsftpd restart
+<pre tabindex="0"><code>sudo service vsftpd restart
 </code></pre><p>jika service tidak ditemukan maka gunakan command ini:</p>
-<pre><code>sudo systemctl restart vsftpd
+<pre tabindex="0"><code>sudo systemctl restart vsftpd
 </code></pre><h2 id="ubah-permission-folder">Ubah permission folder</h2>
 <p>ubah permission folder ftp dengan command ini:</p>
-<pre><code>sudo chmod -R 755 /home/user/ftp
+<pre tabindex="0"><code>sudo chmod -R 755 /home/user/ftp
 </code></pre><p>ubah user sesuai dengan nama pengguna kita.</p>
 <h2 id="buat-user-baru-khusus-ftp-tidak-wajib">Buat user baru khusus ftp (tidak wajib)</h2>
 <p>jika kita ingin membuat custom user untuk ftp saja, gunakan command ini:</p>
-<pre><code>sudo useradd -m -d /path/to/custom/folder -s /bin/bash ftpuser
+<pre tabindex="0"><code>sudo useradd -m -d /path/to/custom/folder -s /bin/bash ftpuser
 sudo passwd ftpuser
 </code></pre><p>/path/to/custom/folder diganti dengan path ke folder ftp yang kita pakai.</p>
 <h2 id="cek-status-server">Cek status server</h2>
 <p>gunakan command:</p>
-<pre><code>sudo systemctl status vsftpd
+<pre tabindex="0"><code>sudo systemctl status vsftpd
 </code></pre><p>Sekian tutorial saya terimakasih.</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
@@ -174,7 +174,7 @@ sudo passwd ftpuser
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ftp/">ftp</a>,&nbsp;<a href="/tags/linux/">linux</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ftp/">ftp</a>,&nbsp;<a href="/tags/linux/">Linux</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
@@ -185,7 +185,7 @@ sudo passwd ftpuser
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
         </div>
     </footer></div>
 

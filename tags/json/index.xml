@@ -15,8 +15,8 @@ Just searched the page for the answer.
 I opened the network inspect tool just in case.
 After i answered question 15, there was a post request with payload &ldquo;score=0&rdquo;
 I copied the request as cUrl
- curl &lsquo;https://jsonquiz.be.ax/submit' -X POST &ndash;data-raw &lsquo;score=0&rsquo;
- change it to:]]></description>
+curl &lsquo;https://jsonquiz.be.ax/submit' -X POST &ndash;data-raw &lsquo;score=0&rsquo;
+change it to:]]></description>
 </item>
 </channel>
 </rss>

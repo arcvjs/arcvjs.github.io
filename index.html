@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.80.0" />
+	<meta name="generator" content="Hugo 0.111.3">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <title>Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:title" content="Arcvjs&#39;s blog" />
 <meta property="og:description" content="blogs, others" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://arcvjs.github.io/" />
-<meta property="og:updated_time" content="2023-10-31T11:00:04+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
+<meta property="og:url" content="https://arcvjs.github.io/" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Arcvjs&#39;s blog"/>
 <meta name="twitter:description" content="blogs, others"/>
@@ -88,23 +87,46 @@
     </div><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/arcvjs" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/networking/database/">Database</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-02-20">2024-02-20</time></span></div><div class="content">Install database MySQL di linux dan membuat relation antar tables Update &amp; upgrade server sudo apt update lalu
+sudo apt upgrade Install mariadb sql server &amp; client untuk install sql server
+sudo apt install mariadb-server ```bash untuk install sql client ```bash sudo apt install mariadb-client start database server sudo systemctl start mariadb Login the database sudo mysql -u root gunakan sudo sehingga kita tidak perlu memasukan password
+buat database baru CREATE DATABASE User; pilih database itu dengan</div><div class="post-footer">
+        <a href="/posts/networking/database/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/sql/">SQL</a>,&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/cli/">CLI</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/networking/web-server/">Web Server</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-02-20">2024-02-20</time></span></div><div class="content">Cara install apache2 Web Server Linux Update &amp; upgrade system sudo apt update sudo apt upgrade install apache2 sudo apt install apache2 start server apache2 sudo systemctl start apache2 enable server apache2 on boot sudo systemctl enable apache2 Stop webserver sudo systemctl stop apache2 Disable apache2 on boot sudo systemctl disable apache2 </div><div class="post-footer">
+        <a href="/posts/networking/web-server/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/apache/">apache</a>,&nbsp;<a href="/tags/linux/">Linux</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/networking/file-server/">File Server</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-02-20">2024-02-20</time></span></div><div class="content">How to setup file server on Debian / Ubuntu based distribution. Intalling Samba. Pertama kita mulai dengan menginstall samba menggunakan apt, sebelum itu update dan upgrade apt terlebih dulu.
+sudo apt update &amp;&amp; sudo apt upgrade lalu&hellip;
+sudo apt install samba tunggu hingga terinstall.
+Buat folder share ( Samba) Selanjutnya kita buat folder Sambda yang untuk di share.
+sudo mkdir -p /var/samba/public lalu ubah permission dari folder tersebut.
+sudo chmod 777 /var/samba/public Konfigurasi samba.</div><div class="post-footer">
+        <a href="/posts/networking/file-server/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/samba/">samba</a>,&nbsp;<a href="/tags/file/">file</a>,&nbsp;<a href="/tags/linux/">Linux</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/networking/proxy-server/">Proxy Server</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-31">2023-10-31</time></span></div><div class="content">How to isntall &amp; do simple configuration of Squid&rsquo;s Proxy server on linux Installing squid sudo apt update -y &amp;&amp; sudo apt install squid first we install the squid proxy application. and all of its dependencies.
 Configuring the proxy server the configuration file is located in /etc/squid/squid.conf we can edit it using nano
 sudo nano /etc/squid/squid.conf now we need to allow http, as the default configuration forbid it.
 http_access allow all change deny to allow.</div><div class="post-footer">
         <a href="/posts/networking/proxy-server/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/proxy/">proxy</a>,&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/debian/">debian</a>,&nbsp;<a href="/tags/networking/">networking</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/proxy/">proxy</a>,&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/debian/">debian</a>,&nbsp;<a href="/tags/networking/">networking</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/networking/dns-server/">DNS Server konfigurasi menggunakan bind9</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-10">2023-10-10</time></span></div><div class="content">Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
 sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
 sudo nano /etc/bind/named.conf.local isi file dengan:
-zone &quot;james.com&quot; { type master; file &quot;/etc/bind/db.james.com&quot;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
+zone &#34;james.com&#34; { type master; file &#34;/etc/bind/db.james.com&#34;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
 sekarang kita buat file db.james.com
 sesuaikan dengan apa yang ditulis di named.conf.local</div><div class="post-footer">
         <a href="/posts/networking/dns-server/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/dns/">DNS</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/dns/">DNS</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/networking/dhcp-server/">DHCP Server configuration di linux</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-10">2023-10-10</time></span></div><div class="content">Cara konfigurasi DHCP Server di linux dalam tutorial ini, saya akan menjelaskan cara konfigurasi dchp server di debian linux. Saaya akan menggunakan isc-dhcp-server.
@@ -113,30 +135,7 @@ sudo apt-get update sudo apt-uget install isc-dhcp-server Konfigurasi gunakan co
 sudo nano /etc/dhcp/dhcpd.conf berikut contoh konfigurasi
 subnet 192.168.1.0 netmask 255.255.255.0 { range 192.168.1.100 192.168.1.200; option routers 192.168.1.1; option domain-name-servers 8.8.8.8, 8.8.4.4; option subnet-mask 255.</div><div class="post-footer">
         <a href="/posts/networking/dhcp-server/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/dchp/">dchp</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/networking/ftp-server/">FTP Server configuration</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-10">2023-10-10</time></span></div><div class="content">#How to configure vsftpd server in debian Dalam tutorial ini saya akan menjelaskan cara konfigurasi vsftpd. u
-Installasi vsftpd server Untuk menginstallasi vsftpd di linux, dapat menggunakan package manager apt-get, menggunakan command seperti dibawah ini:
-sudo apt-get install vsftpd Ubah file konfigurasi vsftpd Setelah vsftpd sudah terinstall tanpa error, selanjutnya kita ubah file konfigurasi default di linux. Kita akan menggunakan text editor nano:
-sudo nano /etc/vsftpd.conf Masukan password karena perlu privilages sudo.</div><div class="post-footer">
-        <a href="/posts/networking/ftp-server/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ftp/">ftp</a>,&nbsp;<a href="/tags/linux/">linux</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/networking/ssh-config/">SSH Config Debian</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-09-12">2023-09-12</time></span></div><div class="content">#Configurasi SSH di Linux
-Update dan Upgrade repository gunakan command apt untuk mengupdate and upgrade package yang sudah terinstall, sebagai best practice. jalankan perintah berikut di terminal linux anda.
-sudo apt update &amp;&amp; sudo apt upgrade Install openssh-server gunakan apt package manager untuk menginstall openssh-server, jalankan perintah dibawah:
-sudo apt install openssh-server -y flag -y digunakan untuk menerima konfirmasi installasi (tidak wajib).
-Jalankan sshd service setiap boot gunakan command systemctl untuk membuat sshd berjalan setiap linux di booting, jalankan perintah dibawah ini:</div><div class="post-footer">
-        <a href="/posts/networking/ssh-config/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/networking/">networking</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/picogym/static-aint-always-noise/">Static Aint Always Noise</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-10-15">2022-10-15</time></span></div><div class="content">Static Ain&rsquo;t Always Noise Picogym writeups. we we&rsquo;re given two files. static and ltdis.sh . static is filled with binary data. so i tried to print all readables character in it with the command string. and after a little bit of scrolling i found the flag.
-use the command:
-strings static | grep pico{ flag: picoCTF{d15a5m_t34s3r_f6c48608}</div><div class="post-footer">
-        <a href="/posts/picogym/static-aint-always-noise/">Read More</a></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/dchp/">dchp</a></div></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -151,7 +150,7 @@ strings static | grep pico{ flag: picoCTF{d15a5m_t34s3r_f6c48608}</div><div clas
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
         </div>
     </footer></div>
 
