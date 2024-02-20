@@ -87,58 +87,11 @@
     </div><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/arcvjs" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/networking/mailserver/">Mailserver</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-02-20">2024-02-20</time></span></div><div class="content">Cara setup Mailserver di Ubuntu menggunakan postfix dan roundcube. Install databse terlebih dulu Install postfix, bind9 dns server dan roundcube sudo apt install postfix bind9 roundcube lalu pilih internet server
-lalu isi system mail name
-testmail.com setelah itu isi password untuk roundcube.
-Configurasi postfix buka file /etc/postfix/main.cf
-myhostname = testmail.com mydomain = testmail.com lalu restart
-sudo systemctl restart postfix Configurasi DNS edit file conf
-sudo nano /etc/bind/named.conf.local lalu isi
-zone &#34;testmail.</div><div class="post-footer">
-        <a href="/posts/networking/mailserver/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/networking/database/">Database</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-02-20">2024-02-20</time></span></div><div class="content">Install database MySQL di linux dan membuat relation antar tables Update &amp; upgrade server sudo apt update lalu
-sudo apt upgrade Install mariadb sql server &amp; client untuk install sql server
-sudo apt install mariadb-server ```bash untuk install sql client ```bash sudo apt install mariadb-client start database server sudo systemctl start mariadb Login the database sudo mysql -u root gunakan sudo sehingga kita tidak perlu memasukan password
-buat database baru CREATE DATABASE User; pilih database itu dengan</div><div class="post-footer">
-        <a href="/posts/networking/database/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/sql/">SQL</a>,&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/cli/">CLI</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/networking/web-server/">Web Server</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-02-20">2024-02-20</time></span></div><div class="content">Cara install apache2 Web Server Linux Update &amp; upgrade system sudo apt update sudo apt upgrade install apache2 sudo apt install apache2 start server apache2 sudo systemctl start apache2 enable server apache2 on boot sudo systemctl enable apache2 Stop webserver sudo systemctl stop apache2 Disable apache2 on boot sudo systemctl disable apache2 </div><div class="post-footer">
-        <a href="/posts/networking/web-server/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/apache/">apache</a>,&nbsp;<a href="/tags/linux/">Linux</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/networking/file-server/">File Server</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-02-20">2024-02-20</time></span></div><div class="content">How to setup file server on Debian / Ubuntu based distribution. Intalling Samba. Pertama kita mulai dengan menginstall samba menggunakan apt, sebelum itu update dan upgrade apt terlebih dulu.
-sudo apt update &amp;&amp; sudo apt upgrade lalu&hellip;
-sudo apt install samba tunggu hingga terinstall.
-Buat folder share ( Samba) Selanjutnya kita buat folder Sambda yang untuk di share.
-sudo mkdir -p /var/samba/public lalu ubah permission dari folder tersebut.
-sudo chmod 777 /var/samba/public Konfigurasi samba.</div><div class="post-footer">
-        <a href="/posts/networking/file-server/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/samba/">samba</a>,&nbsp;<a href="/tags/file/">file</a>,&nbsp;<a href="/tags/linux/">Linux</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/networking/proxy-server/">Proxy Server</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-31">2023-10-31</time></span></div><div class="content">How to isntall &amp; do simple configuration of Squid&rsquo;s Proxy server on linux Installing squid sudo apt update -y &amp;&amp; sudo apt install squid first we install the squid proxy application. and all of its dependencies.
-Configuring the proxy server the configuration file is located in /etc/squid/squid.conf we can edit it using nano
-sudo nano /etc/squid/squid.conf now we need to allow http, as the default configuration forbid it.
-http_access allow all change deny to allow.</div><div class="post-footer">
-        <a href="/posts/networking/proxy-server/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/proxy/">proxy</a>,&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/debian/">debian</a>,&nbsp;<a href="/tags/networking/">networking</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/networking/dns-server/">DNS Server konfigurasi menggunakan bind9</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-10-10">2023-10-10</time></span></div><div class="content">Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
-sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
-sudo nano /etc/bind/named.conf.local isi file dengan:
-zone &#34;james.com&#34; { type master; file &#34;/etc/bind/db.james.com&#34;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
-sekarang kita buat file db.james.com
-sesuaikan dengan apa yang ditulis di named.conf.local</div><div class="post-footer">
-        <a href="/posts/networking/dns-server/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/dns/">DNS</a></div></div>
-</article><ul class="pagination"><li class="page-item active">
+        <a href="/posts/first-blog/">First Blog</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-07-28">2022-07-28</time></span></div><div class="content">Welcome, to my blog. This blog will be used for writeups and many more. I&rsquo;m using this for personal documentation. Enjoy.</div><div class="post-footer">
+        <a href="/posts/first-blog/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/others/">others</a></div></div>
+</article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
                     </span>
@@ -150,7 +103,7 @@ sesuaikan dengan apa yang ditulis di named.conf.local</div><div class="post-foot
                     <span class="page-link">
                         <a href="/page/3/">3</a>
                     </span>
-                </li><li class="page-item ">
+                </li><li class="page-item active">
                     <span class="page-link">
                         <a href="/page/4/">4</a>
                     </span>

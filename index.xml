@@ -3,9 +3,24 @@
         <title>Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/</link>
         <description>blogs, others</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 20 Feb 2024 10:03:12 &#43;0700</lastBuildDate>
             <atom:link href="https://arcvjs.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Mailserver</title>
+    <link>https://arcvjs.github.io/posts/networking/mailserver/</link>
+    <pubDate>Tue, 20 Feb 2024 10:03:12 &#43;0700</pubDate>
+    <author>James S</author>
+    <guid>https://arcvjs.github.io/posts/networking/mailserver/</guid>
+    <description><![CDATA[Cara setup Mailserver di Ubuntu menggunakan postfix dan roundcube. Install databse terlebih dulu Install postfix, bind9 dns server dan roundcube sudo apt install postfix bind9 roundcube lalu pilih internet server
+lalu isi system mail name
+testmail.com setelah itu isi password untuk roundcube.
+Configurasi postfix buka file /etc/postfix/main.cf
+myhostname = testmail.com mydomain = testmail.com lalu restart
+sudo systemctl restart postfix Configurasi DNS edit file conf
+sudo nano /etc/bind/named.conf.local lalu isi
+zone &#34;testmail.]]></description>
+</item>
+<item>
     <title>Database</title>
     <link>https://arcvjs.github.io/posts/networking/database/</link>
     <pubDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</pubDate>
@@ -105,16 +120,6 @@ Jalankan sshd service setiap boot gunakan command systemctl untuk membuat sshd b
     <description><![CDATA[Static Ain&rsquo;t Always Noise Picogym writeups. we we&rsquo;re given two files. static and ltdis.sh . static is filled with binary data. so i tried to print all readables character in it with the command string. and after a little bit of scrolling i found the flag.
 use the command:
 strings static | grep pico{ flag: picoCTF{d15a5m_t34s3r_f6c48608}]]></description>
-</item>
-<item>
-    <title>Mind Your Ps and Qs</title>
-    <link>https://arcvjs.github.io/posts/picogym/mind-your-ps-and-qs/</link>
-    <pubDate>Sun, 02 Oct 2022 10:45:34 &#43;0700</pubDate>
-    <author>James S</author>
-    <guid>https://arcvjs.github.io/posts/picogym/mind-your-ps-and-qs/</guid>
-    <description><![CDATA[Mind Your Ps and Qs picoGym writeup. Challenges In RSA, a small e value can be problematic, but what about N? Can you decrypt this?
-File given: values
-values: c= 8533139361076999596208540806559574687666062896040360148742851107661304651861689 n= 769457290801263793712740792519696786147248001937382943813345728685422050738403253 e= 65537 Explaination RSA is an asymmetric cryptographic algorithm. It is called asymmetric because there are 2 keys. Public key are used to encrypt the clear text. Private key on the other hand are used to decrypt the encrypted text.]]></description>
 </item>
 </channel>
 </rss>
