@@ -22,7 +22,24 @@
     <pubDate>Tue, 03 Dec 2024 08:03:03 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/openvpn/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[<h1 id="openvpn-server-debian-11">Openvpn Server Debian 11</h1>
+<h3 id="1-persiapan-awal"><strong>1. Persiapan Awal</strong></h3>
+<ul>
+<li>Pastikan server terhubung ke internet.</li>
+<li>Pastikan repository dari server telah disiapkan dan dapat diakses.</li>
+</ul>
+<hr>
+<h3 id="2-cek-alamat-ip-lokal"><strong>2. Cek Alamat IP Lokal</strong></h3>
+<p>Periksa IP lokal Debian Anda yang sedang berjalan dengan perintah berikut:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ip a
+</span></span></code></pre></div><hr>
+<h3 id="3-instalasi-aplikasi-vpn"><strong>3. Instalasi Aplikasi VPN</strong></h3>
+<p>Install aplikasi PPTP VPN dengan perintah:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install pptpd
+</span></span></code></pre></div><hr>
+<h3 id="4-konfigurasi-ip-lokal-dan-remote"><strong>4. Konfigurasi IP Lokal dan Remote</strong></h3>
+<p>Edit file konfigurasi <code>pptpd.conf</code> untuk menentukan IP lokal dan remote:</p>]]></description>
 </item>
 <item>
     <title>Mailserver</title>

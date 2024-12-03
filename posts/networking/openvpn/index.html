@@ -7,7 +7,9 @@
         <title>Openvpn - Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:url" content="https://arcvjs.github.io/posts/networking/openvpn/">
   <meta property="og:site_name" content="Arcvjs&#39;s blog">
   <meta property="og:title" content="Openvpn">
-  <meta property="og:description" content="blogs, others">
+  <meta property="og:description" content="Openvpn Server Debian 11 1. Persiapan Awal Pastikan server terhubung ke internet. Pastikan repository dari server telah disiapkan dan dapat diakses. 2. Cek Alamat IP Lokal Periksa IP lokal Debian Anda yang sedang berjalan dengan perintah berikut:
+ip a 3. Instalasi Aplikasi VPN Install aplikasi PPTP VPN dengan perintah:
+sudo apt update sudo apt install pptpd 4. Konfigurasi IP Lokal dan Remote Edit file konfigurasi pptpd.conf untuk menentukan IP lokal dan remote:">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -16,7 +18,9 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Openvpn">
-  <meta name="twitter:description" content="blogs, others">
+  <meta name="twitter:description" content="Openvpn Server Debian 11 1. Persiapan Awal Pastikan server terhubung ke internet. Pastikan repository dari server telah disiapkan dan dapat diakses. 2. Cek Alamat IP Lokal Periksa IP lokal Debian Anda yang sedang berjalan dengan perintah berikut:
+ip a 3. Instalasi Aplikasi VPN Install aplikasi PPTP VPN dengan perintah:
+sudo apt update sudo apt install pptpd 4. Konfigurasi IP Lokal dan Remote Edit file konfigurasi pptpd.conf untuk menentukan IP lokal dan remote:">
 <meta name="application-name" content="Arcvjs&#39;s blog">
 <meta name="apple-mobile-web-app-title" content="Arcvjs&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -31,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/arcvjs.github.io\/posts\/networking\/openvpn\/"
-        },"genre": "posts","wordcount":  0 ,
+        },"genre": "posts","wordcount":  166 ,
         "url": "https:\/\/arcvjs.github.io\/posts\/networking\/openvpn\/","datePublished": "2024-12-03T08:03:03+07:00","dateModified": "2024-12-03T08:03:03+07:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -105,15 +109,78 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Openvpn</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-12-03">2024-12-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;0 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;0 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-12-03">2024-12-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;166 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"></div><div class="post-footer" id="post-footer">
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-persiapan-awal"><strong>1. Persiapan Awal</strong></a></li>
+        <li><a href="#2-cek-alamat-ip-lokal"><strong>2. Cek Alamat IP Lokal</strong></a></li>
+        <li><a href="#3-instalasi-aplikasi-vpn"><strong>3. Instalasi Aplikasi VPN</strong></a></li>
+        <li><a href="#4-konfigurasi-ip-lokal-dan-remote"><strong>4. Konfigurasi IP Lokal dan Remote</strong></a></li>
+        <li><a href="#5-konfigurasi-name-server-pptp-dan-dns"><strong>5. Konfigurasi Name Server PPTP dan DNS</strong></a></li>
+        <li><a href="#6-buat-username-dan-password"><strong>6. Buat Username dan Password</strong></a></li>
+        <li><a href="#7-restart-layanan"><strong>7. Restart Layanan</strong></a></li>
+        <li><a href="#8-konfigurasi-pada-client"><strong>8. Konfigurasi pada Client</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="openvpn-server-debian-11">Openvpn Server Debian 11</h1>
+<h3 id="1-persiapan-awal"><strong>1. Persiapan Awal</strong></h3>
+<ul>
+<li>Pastikan server terhubung ke internet.</li>
+<li>Pastikan repository dari server telah disiapkan dan dapat diakses.</li>
+</ul>
+<hr>
+<h3 id="2-cek-alamat-ip-lokal"><strong>2. Cek Alamat IP Lokal</strong></h3>
+<p>Periksa IP lokal Debian Anda yang sedang berjalan dengan perintah berikut:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ip a
+</span></span></code></pre></div><hr>
+<h3 id="3-instalasi-aplikasi-vpn"><strong>3. Instalasi Aplikasi VPN</strong></h3>
+<p>Install aplikasi PPTP VPN dengan perintah:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install pptpd
+</span></span></code></pre></div><hr>
+<h3 id="4-konfigurasi-ip-lokal-dan-remote"><strong>4. Konfigurasi IP Lokal dan Remote</strong></h3>
+<p>Edit file konfigurasi <code>pptpd.conf</code> untuk menentukan IP lokal dan remote:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/pptpd.conf
+</span></span></code></pre></div><p>Tambahkan atau sesuaikan entri berikut:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>localip 192.168.1.1
+</span></span><span style="display:flex;"><span>remoteip 192.168.1.100-200
+</span></span></code></pre></div><hr>
+<h3 id="5-konfigurasi-name-server-pptp-dan-dns"><strong>5. Konfigurasi Name Server PPTP dan DNS</strong></h3>
+<p>Edit file <code>pptpd-options</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/ppp/pptpd-options
+</span></span></code></pre></div><p>Tambahkan atau perbarui entri berikut:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>ms-dns 8.8.8.8
+</span></span><span style="display:flex;"><span>ms-dns 8.8.4.4
+</span></span></code></pre></div><hr>
+<h3 id="6-buat-username-dan-password"><strong>6. Buat Username dan Password</strong></h3>
+<p>Tambahkan username dan password untuk autentikasi di file <code>chap-secrets</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/ppp/chap-secrets
+</span></span></code></pre></div><p>Tambahkan format berikut:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>username  pptpd  password  *
+</span></span></code></pre></div><hr>
+<h3 id="7-restart-layanan"><strong>7. Restart Layanan</strong></h3>
+<p>Restart layanan networking dan aplikasi VPN:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart networking
+</span></span><span style="display:flex;"><span>sudo systemctl restart pptpd
+</span></span></code></pre></div><hr>
+<h3 id="8-konfigurasi-pada-client"><strong>8. Konfigurasi pada Client</strong></h3>
+<p>Pada sisi klien:</p>
+<ol>
+<li>Buka <strong>Network and Sharing Center</strong>.</li>
+<li>Tambahkan VPN menggunakan detail konfigurasi yang sesuai.</li>
+</ol>
+<hr>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
