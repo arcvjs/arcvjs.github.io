@@ -1,17 +1,26 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>forensics - Tag - Arcvjs&#39;s blog</title>
+        <title>Forensics - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/forensics/</link>
-        <description>forensics - Tag - Arcvjs&#39;s blog</description>
+        <description>Forensics - Tag - Arcvjs&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 30 Sep 2022 20:38:18 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/forensics/" rel="self" type="application/rss+xml" /><item>
     <title>Information</title>
     <link>https://arcvjs.github.io/posts/picogym/information/</link>
     <pubDate>Fri, 30 Sep 2022 20:38:18 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/picogym/information/</guid>
-    <description><![CDATA[Information Picogym Writeups Files can always be changed in a secret way. Can you find the flag?
-We were given the file cat.jpg. There&rsquo;s something called a metadata on some images. Metadata stores basic information about the images. Such as author, time when the picture was taken, color profiles, and many more.
-To view the metadata of an images, you can use a tool called exiftool. To install it on Ubuntu or other Debian based system you can use the command: sudo apt install exiftool Or if you are on a arch based system you can use the command: sudo pacman -S perl-image-exiftool Alternatively you can use an online tool to view metadatas.]]></description>
+    <description><![CDATA[<h1 id="information-picogym-writeups">Information Picogym Writeups</h1>
+<p><code>Files can always be changed in a secret way. Can you find the flag?</code></p>
+<p>We were given the file cat.jpg.
+There&rsquo;s something called a metadata on some images.
+Metadata stores basic information about the images.
+Such as author, time when the picture was taken, color profiles, and many more.</p>
+<p>To view the metadata of an images, you can use a tool called exiftool.
+To install it on Ubuntu or other Debian based system you can use the command:
+<code>sudo apt install exiftool</code>
+Or if you are on a arch based system you can use the command:
+<code>sudo pacman -S perl-image-exiftool</code>
+Alternatively you can use an online tool to view metadatas.</p>]]></description>
 </item>
 </channel>
 </rss>

@@ -9,10 +9,28 @@
     <pubDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/database/</guid>
-    <description><![CDATA[Install database MySQL di linux dan membuat relation antar tables Update &amp; upgrade server sudo apt update lalu
-sudo apt upgrade Install mariadb sql server &amp; client untuk install sql server
-sudo apt install mariadb-server ```bash untuk install sql client ```bash sudo apt install mariadb-client start database server sudo systemctl start mariadb Login the database sudo mysql -u root gunakan sudo sehingga kita tidak perlu memasukan password
-buat database baru CREATE DATABASE User; pilih database itu dengan]]></description>
+    <description><![CDATA[<h1 id="install-database-mysql-di-linux-dan-membuat-relation-antar-tables">Install database MySQL di linux dan membuat relation antar tables</h1>
+<h2 id="update--upgrade-server">Update &amp; upgrade server</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span></code></pre></div><p>lalu</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt upgrade
+</span></span></code></pre></div><h2 id="install-mariadb-sql-server--client">Install mariadb sql server &amp; client</h2>
+<p>untuk install sql server</p>
+<pre tabindex="0"><code>sudo apt install mariadb-server
+```bash
+
+untuk install sql client
+
+```bash
+sudo apt install mariadb-client
+</code></pre><h2 id="start-database-server">start database server</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start mariadb
+</span></span></code></pre></div><h2 id="login-the-database">Login the database</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mysql -u root 
+</span></span></code></pre></div><p>gunakan sudo sehingga kita tidak perlu memasukan password</p>
+<h2 id="buat-database-baru">buat database baru</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> <span style="color:#66d9ef">User</span>;
+</span></span></code></pre></div><p>pilih database itu dengan</p>]]></description>
 </item>
 </channel>
 </rss>

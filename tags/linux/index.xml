@@ -9,10 +9,28 @@
     <pubDate>Tue, 20 Feb 2024 08:25:38 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/database/</guid>
-    <description><![CDATA[Install database MySQL di linux dan membuat relation antar tables Update &amp; upgrade server sudo apt update lalu
-sudo apt upgrade Install mariadb sql server &amp; client untuk install sql server
-sudo apt install mariadb-server ```bash untuk install sql client ```bash sudo apt install mariadb-client start database server sudo systemctl start mariadb Login the database sudo mysql -u root gunakan sudo sehingga kita tidak perlu memasukan password
-buat database baru CREATE DATABASE User; pilih database itu dengan]]></description>
+    <description><![CDATA[<h1 id="install-database-mysql-di-linux-dan-membuat-relation-antar-tables">Install database MySQL di linux dan membuat relation antar tables</h1>
+<h2 id="update--upgrade-server">Update &amp; upgrade server</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span></code></pre></div><p>lalu</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt upgrade
+</span></span></code></pre></div><h2 id="install-mariadb-sql-server--client">Install mariadb sql server &amp; client</h2>
+<p>untuk install sql server</p>
+<pre tabindex="0"><code>sudo apt install mariadb-server
+```bash
+
+untuk install sql client
+
+```bash
+sudo apt install mariadb-client
+</code></pre><h2 id="start-database-server">start database server</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start mariadb
+</span></span></code></pre></div><h2 id="login-the-database">Login the database</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mysql -u root 
+</span></span></code></pre></div><p>gunakan sudo sehingga kita tidak perlu memasukan password</p>
+<h2 id="buat-database-baru">buat database baru</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> <span style="color:#66d9ef">User</span>;
+</span></span></code></pre></div><p>pilih database itu dengan</p>]]></description>
 </item>
 <item>
     <title>Web Server</title>
@@ -20,7 +38,21 @@ buat database baru CREATE DATABASE User; pilih database itu dengan]]></descripti
     <pubDate>Tue, 20 Feb 2024 08:22:00 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/web-server/</guid>
-    <description><![CDATA[Cara install apache2 Web Server Linux Update &amp; upgrade system sudo apt update sudo apt upgrade install apache2 sudo apt install apache2 start server apache2 sudo systemctl start apache2 enable server apache2 on boot sudo systemctl enable apache2 Stop webserver sudo systemctl stop apache2 Disable apache2 on boot sudo systemctl disable apache2 ]]></description>
+    <description><![CDATA[<h1 id="cara-install-apache2-web-server-linux">Cara install apache2 Web Server Linux</h1>
+<h2 id="update--upgrade-system">Update &amp; upgrade system</h2>
+<pre tabindex="0"><code>sudo apt update
+sudo apt upgrade
+</code></pre><h2 id="install-apache2">install apache2</h2>
+<pre tabindex="0"><code>sudo apt install apache2
+</code></pre><h2 id="start-server-apache2">start server apache2</h2>
+<pre tabindex="0"><code>sudo systemctl start apache2
+</code></pre><h2 id="enable-server-apache2-on-boot">enable server apache2 on boot</h2>
+<pre tabindex="0"><code>sudo systemctl enable apache2
+</code></pre><h2 id="stop-webserver">Stop webserver</h2>
+<pre tabindex="0"><code>sudo systemctl stop apache2
+</code></pre><h2 id="disable-apache2-on-boot">Disable apache2 on boot</h2>
+<pre tabindex="0"><code>sudo systemctl disable apache2
+</code></pre>]]></description>
 </item>
 <item>
     <title>File Server</title>
@@ -28,12 +60,20 @@ buat database baru CREATE DATABASE User; pilih database itu dengan]]></descripti
     <pubDate>Tue, 20 Feb 2024 08:11:12 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/file-server/</guid>
-    <description><![CDATA[How to setup file server on Debian / Ubuntu based distribution. Intalling Samba. Pertama kita mulai dengan menginstall samba menggunakan apt, sebelum itu update dan upgrade apt terlebih dulu.
-sudo apt update &amp;&amp; sudo apt upgrade lalu&hellip;
-sudo apt install samba tunggu hingga terinstall.
-Buat folder share ( Samba) Selanjutnya kita buat folder Sambda yang untuk di share.
-sudo mkdir -p /var/samba/public lalu ubah permission dari folder tersebut.
-sudo chmod 777 /var/samba/public Konfigurasi samba.]]></description>
+    <description><![CDATA[<h1 id="how-to-setup-file-server-on-debian--ubuntu-based-distribution">How to setup file server on Debian / Ubuntu based distribution.</h1>
+<h2 id="intalling-samba">Intalling Samba.</h2>
+<p>Pertama kita mulai dengan menginstall samba menggunakan apt, sebelum itu update dan upgrade apt terlebih dulu.</p>
+<pre tabindex="0"><code>sudo apt update &amp;&amp; sudo apt upgrade
+</code></pre><p>lalu&hellip;</p>
+<pre tabindex="0"><code>sudo apt install samba
+</code></pre><p>tunggu hingga terinstall.</p>
+<h2 id="buat-folder-share--samba">Buat folder share ( Samba)</h2>
+<p>Selanjutnya kita buat folder Sambda yang untuk di share.</p>
+<pre tabindex="0"><code>sudo mkdir -p /var/samba/public
+</code></pre><p>lalu ubah permission dari folder tersebut.</p>
+<pre tabindex="0"><code>sudo chmod 777 /var/samba/public
+</code></pre><h2 id="konfigurasi-samba">Konfigurasi samba.</h2>
+<p>ubah isi dari file /etc/samba/smb.conf</p>]]></description>
 </item>
 <item>
     <title>Proxy Server</title>
@@ -41,10 +81,18 @@ sudo chmod 777 /var/samba/public Konfigurasi samba.]]></description>
     <pubDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/proxy-server/</guid>
-    <description><![CDATA[How to isntall &amp; do simple configuration of Squid&rsquo;s Proxy server on linux Installing squid sudo apt update -y &amp;&amp; sudo apt install squid first we install the squid proxy application. and all of its dependencies.
-Configuring the proxy server the configuration file is located in /etc/squid/squid.conf we can edit it using nano
-sudo nano /etc/squid/squid.conf now we need to allow http, as the default configuration forbid it.
-http_access allow all change deny to allow.]]></description>
+    <description><![CDATA[<h1 id="how-to-isntall--do-simple-configuration-of-squids-proxy-server-on-linux">How to isntall &amp; do simple configuration of Squid&rsquo;s Proxy server on linux</h1>
+<h2 id="installing-squid">Installing squid</h2>
+<pre tabindex="0"><code>sudo apt update -y &amp;&amp; sudo apt install squid
+</code></pre><p>first we install the squid proxy application.
+and all of its dependencies.</p>
+<h2 id="configuring-the-proxy-server">Configuring the proxy server</h2>
+<p>the configuration file is located in /etc/squid/squid.conf
+we can edit it using nano</p>
+<pre tabindex="0"><code>sudo nano /etc/squid/squid.conf
+</code></pre><p>now we need to allow http, as the default configuration forbid it.</p>
+<pre tabindex="0"><code>http_access allow all
+</code></pre><p>change deny to allow.</p>]]></description>
 </item>
 <item>
     <title>DNS Server konfigurasi menggunakan bind9</title>
@@ -52,12 +100,24 @@ http_access allow all change deny to allow.]]></description>
     <pubDate>Tue, 10 Oct 2023 08:12:20 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/dns-server/</guid>
-    <description><![CDATA[Tutorial konfigurasi dns server di linux installl bind9 untuk installasi bind9 server di linux gunakan command ini:
-sudo apt-get update sudo apt-get install bind9 Konfigurasi pertama2 ubah dan buat file named.conf.local:
-sudo nano /etc/bind/named.conf.local isi file dengan:
-zone &#34;james.com&#34; { type master; file &#34;/etc/bind/db.james.com&#34;; # Path to the zone file }; ubah james.com dengan domain yang kita mau.
-sekarang kita buat file db.james.com
-sesuaikan dengan apa yang ditulis di named.conf.local]]></description>
+    <description><![CDATA[<h1 id="tutorial-konfigurasi-dns-server-di-linux">Tutorial konfigurasi dns server di linux</h1>
+<h2 id="installl-bind9">installl bind9</h2>
+<p>untuk installasi bind9 server di linux gunakan command ini:</p>
+<pre tabindex="0"><code>sudo apt-get update
+sudo apt-get install bind9
+</code></pre><h2 id="konfigurasi">Konfigurasi</h2>
+<p>pertama2 ubah dan buat file named.conf.local:</p>
+<pre tabindex="0"><code>sudo nano /etc/bind/named.conf.local
+</code></pre><p>isi file dengan:</p>
+<pre tabindex="0"><code>zone &#34;james.com&#34; {
+    type master;
+    file &#34;/etc/bind/db.james.com&#34;; # Path to the zone file
+};
+</code></pre><p>ubah james.com dengan domain yang kita mau.</p>
+<p>sekarang kita buat file db.james.com</p>
+<p>sesuaikan dengan apa yang ditulis di named.conf.local</p>
+<pre tabindex="0"><code>sudo nano /etc/bind/db.james.com
+</code></pre><p>isi file seperti ini:</p>]]></description>
 </item>
 <item>
     <title>DHCP Server configuration di linux</title>
@@ -65,11 +125,27 @@ sesuaikan dengan apa yang ditulis di named.conf.local]]></description>
     <pubDate>Tue, 10 Oct 2023 08:12:15 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/dhcp-server/</guid>
-    <description><![CDATA[Cara konfigurasi DHCP Server di linux dalam tutorial ini, saya akan menjelaskan cara konfigurasi dchp server di debian linux. Saaya akan menggunakan isc-dhcp-server.
-Installasi isc-dhcp-server Untuk menginstall isc-dhcp-server, saya akan menggunakan apt:
-sudo apt-get update sudo apt-uget install isc-dhcp-server Konfigurasi gunakan command ini untuk mengubah file konfigurasi:
-sudo nano /etc/dhcp/dhcpd.conf berikut contoh konfigurasi
-subnet 192.168.1.0 netmask 255.255.255.0 { range 192.168.1.100 192.168.1.200; option routers 192.168.1.1; option domain-name-servers 8.8.8.8, 8.8.4.4; option subnet-mask 255.]]></description>
+    <description><![CDATA[<h1 id="cara-konfigurasi-dhcp-server-di-linux">Cara konfigurasi DHCP Server di linux</h1>
+<p>dalam tutorial ini, saya akan menjelaskan cara konfigurasi dchp server di debian linux.
+Saaya akan menggunakan isc-dhcp-server.</p>
+<h2 id="installasi-isc-dhcp-server">Installasi isc-dhcp-server</h2>
+<p>Untuk menginstall isc-dhcp-server, saya akan menggunakan apt:</p>
+<pre tabindex="0"><code>sudo apt-get update
+sudo apt-uget install isc-dhcp-server
+</code></pre><h2 id="konfigurasi">Konfigurasi</h2>
+<p>gunakan command ini untuk mengubah file konfigurasi:</p>
+<pre tabindex="0"><code>sudo nano /etc/dhcp/dhcpd.conf
+</code></pre><p>berikut contoh konfigurasi</p>
+<pre tabindex="0"><code>subnet 192.168.1.0 netmask 255.255.255.0 {
+    range 192.168.1.100 192.168.1.200;
+    option routers 192.168.1.1;
+    option domain-name-servers 8.8.8.8, 8.8.4.4;
+    option subnet-mask 255.255.255.0;
+    option broadcast-address 192.168.1.255;
+    default-lease-time 600;
+    max-lease-time 7200;
+}
+</code></pre><p>setelah itu kita perlu mengubah dafault interface di file /etc/default/isc-dhcp-server</p>]]></description>
 </item>
 <item>
     <title>FTP Server configuration</title>
@@ -77,10 +153,17 @@ subnet 192.168.1.0 netmask 255.255.255.0 { range 192.168.1.100 192.168.1.200; op
     <pubDate>Tue, 10 Oct 2023 07:50:37 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/ftp-server/</guid>
-    <description><![CDATA[#How to configure vsftpd server in debian Dalam tutorial ini saya akan menjelaskan cara konfigurasi vsftpd. u
-Installasi vsftpd server Untuk menginstallasi vsftpd di linux, dapat menggunakan package manager apt-get, menggunakan command seperti dibawah ini:
-sudo apt-get install vsftpd Ubah file konfigurasi vsftpd Setelah vsftpd sudah terinstall tanpa error, selanjutnya kita ubah file konfigurasi default di linux. Kita akan menggunakan text editor nano:
-sudo nano /etc/vsftpd.conf Masukan password karena perlu privilages sudo.]]></description>
+    <description><![CDATA[<p>#How to configure vsftpd server in debian
+Dalam tutorial ini saya akan menjelaskan cara konfigurasi vsftpd.
+u</p>
+<h2 id="installasi-vsftpd-server">Installasi vsftpd server</h2>
+<p>Untuk menginstallasi vsftpd di linux, dapat menggunakan package manager apt-get, menggunakan command seperti dibawah ini:</p>
+<pre tabindex="0"><code>sudo apt-get install vsftpd
+</code></pre><h2 id="ubah-file-konfigurasi-vsftpd">Ubah file konfigurasi vsftpd</h2>
+<p>Setelah vsftpd sudah terinstall tanpa error, selanjutnya kita ubah file konfigurasi default di linux. Kita akan menggunakan text editor nano:</p>
+<pre tabindex="0"><code>sudo nano /etc/vsftpd.conf
+</code></pre><p>Masukan password karena perlu privilages sudo.</p>
+<p>lalu jika file sudah dibuka kita perlu menambahkan teks konfigurasi seperti dibawah:</p>]]></description>
 </item>
 <item>
     <title>SSH Config Debian</title>
@@ -88,11 +171,16 @@ sudo nano /etc/vsftpd.conf Masukan password karena perlu privilages sudo.]]></de
     <pubDate>Tue, 12 Sep 2023 09:57:44 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/ssh-config/</guid>
-    <description><![CDATA[#Configurasi SSH di Linux
-Update dan Upgrade repository gunakan command apt untuk mengupdate and upgrade package yang sudah terinstall, sebagai best practice. jalankan perintah berikut di terminal linux anda.
-sudo apt update &amp;&amp; sudo apt upgrade Install openssh-server gunakan apt package manager untuk menginstall openssh-server, jalankan perintah dibawah:
-sudo apt install openssh-server -y flag -y digunakan untuk menerima konfirmasi installasi (tidak wajib).
-Jalankan sshd service setiap boot gunakan command systemctl untuk membuat sshd berjalan setiap linux di booting, jalankan perintah dibawah ini:]]></description>
+    <description><![CDATA[<p>#Configurasi SSH di Linux</p>
+<h2 id="update-dan-upgrade-repository">Update dan Upgrade repository</h2>
+<p>gunakan command apt untuk mengupdate and upgrade package yang sudah terinstall, sebagai best practice. jalankan perintah berikut di terminal linux anda.</p>
+<pre tabindex="0"><code>sudo apt update &amp;&amp; sudo apt upgrade
+</code></pre><h2 id="install-openssh-server">Install openssh-server</h2>
+<p>gunakan apt package manager untuk menginstall openssh-server, jalankan perintah dibawah:</p>
+<pre tabindex="0"><code>sudo apt install openssh-server -y
+</code></pre><p>flag -y digunakan untuk menerima konfirmasi installasi (tidak wajib).</p>
+<h2 id="jalankan-sshd-service-setiap-boot">Jalankan sshd service setiap boot</h2>
+<p>gunakan command systemctl untuk membuat sshd berjalan setiap linux di booting, jalankan perintah dibawah ini:</p>]]></description>
 </item>
 </channel>
 </rss>

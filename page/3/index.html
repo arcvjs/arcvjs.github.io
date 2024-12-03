@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.111.3">
+	<meta name="generator" content="Hugo 0.139.2">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:title" content="Arcvjs&#39;s blog" />
-<meta property="og:description" content="blogs, others" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://arcvjs.github.io/" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Arcvjs&#39;s blog"/>
-<meta name="twitter:description" content="blogs, others"/>
+        <title>Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:url" content="https://arcvjs.github.io/">
+  <meta property="og:site_name" content="Arcvjs&#39;s blog">
+  <meta property="og:title" content="Arcvjs&#39;s blog">
+  <meta property="og:description" content="blogs, others">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Arcvjs&#39;s blog">
+  <meta name="twitter:description" content="blogs, others">
 <meta name="application-name" content="Arcvjs&#39;s blog">
 <meta name="apple-mobile-web-app-title" content="Arcvjs&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -87,51 +90,118 @@
     </div><main class="main">
                 <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/arcvjs" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/picogym/mind-your-ps-and-qs/">Mind Your Ps and Qs</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-10-02">2022-10-02</time></span></div><div class="content"><h1 id="mind-your-ps-and-qs-picogym-writeup">Mind Your Ps and Qs picoGym writeup.</h1>
+<h2 id="challenges">Challenges</h2>
+<p>In RSA, a small e value can be problematic, but what about N? Can you decrypt this?</p>
+<p>File given: values</p>
+<h3 id="values">values:</h3>
+<pre tabindex="0"><code>c= 8533139361076999596208540806559574687666062896040360148742851107661304651861689
+n= 769457290801263793712740792519696786147248001937382943813345728685422050738403253
+e= 65537
+</code></pre><h2 id="explaination">Explaination</h2>
+<p>RSA is an asymmetric cryptographic algorithm.
+It is called asymmetric because there are 2 keys.
+Public key are used to encrypt the clear text.
+Private key on the other hand are used to decrypt the encrypted text.</p></div><div class="post-footer">
+        <a href="/posts/picogym/mind-your-ps-and-qs/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cryptography/">Cryptography</a>,&nbsp;<a href="/tags/rsa/">RSA</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/picogym/information/">Information</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-30">2022-09-30</time></span></div><div class="content"><h1 id="information-picogym-writeups">Information Picogym Writeups</h1>
+<p><code>Files can always be changed in a secret way. Can you find the flag?</code></p>
+<p>We were given the file cat.jpg.
+There&rsquo;s something called a metadata on some images.
+Metadata stores basic information about the images.
+Such as author, time when the picture was taken, color profiles, and many more.</p>
+<p>To view the metadata of an images, you can use a tool called exiftool.
+To install it on Ubuntu or other Debian based system you can use the command:
+<code>sudo apt install exiftool</code>
+Or if you are on a arch based system you can use the command:
+<code>sudo pacman -S perl-image-exiftool</code>
+Alternatively you can use an online tool to view metadatas.</p></div><div class="post-footer">
+        <a href="/posts/picogym/information/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/forensics/">Forensics</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/tryhackme/pickle-rick-tryhackme-writeup/">Pickle Rick TryHackMe Writeup</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-11">2022-09-11</time></span></div><div class="content">Pickle Rick TryHackMe Writeup This is a blog on how i solved Pickle Rick room on tryhackme. Note that i use linux. First i put the machine IP into env using the export command.
-export IP=(your target machine&#39;s IP addres) Enum Nmap I did a simple nmap scan on the server:
-nmap -sCV -oN nmap-init.log $IP -sCV is for using the default scripts and check for services version on the machine.</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-11">2022-09-11</time></span></div><div class="content"><h1 id="pickle-rick-tryhackme-writeup">Pickle Rick TryHackMe Writeup</h1>
+<p>This is a blog on how i solved Pickle Rick room on tryhackme.
+Note that i use linux.
+First i put the machine IP into env using the export command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export IP<span style="color:#f92672">=(</span>your target machine<span style="color:#960050;background-color:#1e0010">&#39;</span>s IP addres<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h2 id="enum">Enum</h2>
+<h3 id="nmap">Nmap</h3>
+<p>I did a simple nmap scan on the server:</p>
+<pre tabindex="0"><code>nmap -sCV -oN nmap-init.log $IP
+</code></pre><p>-sCV is for using the default scripts and check for services version on the machine.
+-oN is to log the output of nmap into a file.</p></div><div class="post-footer">
         <a href="/posts/tryhackme/pickle-rick-tryhackme-writeup/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/ctf/cryptoburst/postman/">Postman CryptoburstCTF 2022 writeup</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-20">2022-08-20</time></span></div><div class="content">Postman - cryptoburst ctf 2022 writeups we were given the image first i tried searching for postman qr. Found no result. then, i tried reverse searching with google images. i found a similar images, from a website explaining types of barcode. https://www.dynamsoft.com/blog/insights/the-comprehensive-guide-to-1d-and-2d-barcodes/ the name of the barcodes are MaxiCode. It was used by UPS so the name Postman makes sense. Now it just comes down to reading the qr. After some browsing i found an online tool for reading.</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-20">2022-08-20</time></span></div><div class="content"><h3 id="postman---cryptoburst-ctf-2022-writeups">Postman - cryptoburst ctf 2022 writeups</h3>
+<p>we were given the image
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/cryptoburst/postman.png"
+        data-srcset="/cryptoburst/postman.png, /cryptoburst/postman.png 1.5x, /cryptoburst/postman.png 2x"
+        data-sizes="auto"
+        alt="/cryptoburst/postman.png"
+        title="postman" /></p>
+<p>first i tried searching for postman qr.
+Found no result.
+then, i tried reverse searching with google images.
+i found a similar images, from a website explaining types of barcode.
+<a href="https://www.dynamsoft.com/blog/insights/the-comprehensive-guide-to-1d-and-2d-barcodes/" target="_blank" rel="noopener noreffer ">https://www.dynamsoft.com/blog/insights/the-comprehensive-guide-to-1d-and-2d-barcodes/</a>
+the name of the barcodes are MaxiCode.
+It was used by UPS so the name Postman makes sense.
+Now it just comes down to reading the qr.
+After some browsing i found an online tool for reading.
+<a href="https://products.conholdate.app/barcode/recognize/maxicode" target="_blank" rel="noopener noreffer ">https://products.conholdate.app/barcode/recognize/maxicode</a>
+here&rsquo;s the result:</p></div><div class="post-footer">
         <a href="/posts/ctf/cryptoburst/postman/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cryptography/">cryptography</a>,&nbsp;<a href="/tags/ctf/">ctf</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/cryptography/">Cryptography</a>,&nbsp;<a href="/tags/ctf/">Ctf</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/ctf/cryptoburst/ook-what-am-i-looking-at/">Ook What Am I Looking At CryptoburstCTF 2022 writeup</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-20">2022-08-20</time></span></div><div class="content">Ook What Am I Looking At - cryptoburst ctf 2022 We were given the string
-. . . . . . . . . . . . . . . . . . . . ! ? . ? . . . ? . . . . . . . ? . . . . . . . . . . . . . . . ? . . . .</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-20">2022-08-20</time></span></div><div class="content"><h3 id="ook-what-am-i-looking-at---cryptoburst-ctf-2022">Ook What Am I Looking At - cryptoburst ctf 2022</h3>
+<p>We were given the string</p>
+<pre tabindex="0"><code>. . . . . . . . . . . . . . . . . . . . ! ? . ? . . . ? . . . . . . . ? . . . . . . . . . . . . . . . ? . . . . . . . . . . . . . . . . . . . . ? . ? . ? . ? . ! ! ? ! . ? . ? . ? ! ! ! ! ! ! ! . . ? . . . . . . . . . . . . . . . . . . . . . . ! . ! ! ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . ! . ! ! ! . . . . . . . . . . . ! . ? . ? . . . . . . . ! . ! ! ! . . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . ? . ? . ! . . ? . ? . . . . . . ! . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? ! ! ! ! ! ! ! ! ! . ! ! ! ! ! ! ! ! ! ! ! . ? . ? . . . . . . . . . . . . . . . ! . . ? . ? . . . . . . . . . . . . ! . ? . ? . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . ? . ? ! ! ! . ! ! ! ! ! ! ! ! ! . ? . ? . ! . . ? . . ! . ! ! ! . . . . . . . ! . ? . ! . . ? . ? . . . . . . . . . . . . . . . . ! . ? . ! ! ! ! ! ! ! . . ? ! ! ! ! ! ! ! ! ! . ? . ? . ! . . ? . . . . . . . . . . . . . . . . ! . . ? . . ! . ? . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? . . . . . . . . . . . . . . . . . . ! . . ? ! ! ! ! ! ! ! ! ! . . ? ! ! ! ! ! . ? . ! . ? . ? . . . . . . . . . . . . . . . ! . . ? . ? . ? . . ! . ? . ? . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? . ? . ? . . . . . . . . . . . . ! . ? . . . . . . . . . . . . . . . . . . . . . ! . . ? ! ! ! ! ! ! ! ! ! . ? . . . . . . . ! . ? . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? . ? ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . ! . ? . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? . . . . . . . . . . . . . . . . . . ! . ! ! ! . . . ! . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . ? . ? . . . . . . . . . . . . ! . ? . . . . . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . . . . . ! . . . . . ! . . ? ! ! ! ! ! ! ! ! ! ! ! . ? . ! ! ! ! ! ! ! ! ! . ! ! ! ! ! ! ! ! ! ! ! ! ! . . ? ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . ? . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! . . ? ! . . . . . . . . . . . . . . . . . . . . . . . . . ! . ? . ! . . . . . . . . . . . . . . . ! . . . . . . . . . . . . . ! . ? . ! ! ! ! ! ! ! ! ! ! ! ! ! . . ? ! ! ! ! ! ! ! ! ! ! ! . . ? . . . . . . . . ! .
+</code></pre><p>The first thing i notice is the name challenge.
+Ook were out of its place.
+i tried searching Ook Chipher
+but i found none.</p></div><div class="post-footer">
         <a href="/posts/ctf/cryptoburst/ook-what-am-i-looking-at/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ctf/">ctf</a>,&nbsp;<a href="/tags/cryptography/">cryptography</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ctf/">Ctf</a>,&nbsp;<a href="/tags/cryptography/">Cryptography</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/ctf/corctf2022/tadpole/">Tadpole CorCTF 2022 writeup</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-06">2022-08-06</time></span></div><div class="content">Tadpole corctf 2022 writeups we were given two files
-file 1: tadpole.py
-from Crypto.Util.number import bytes_to_long, isPrime from secrets import randbelow p = bytes_to_long(open(&#34;flag.txt&#34;, &#34;rb&#34;).read()) assert isPrime(p) a = randbelow(p) b = randbelow(p) def f(s): return (a * s + b) % p print(&#34;a = &#34;, a) print(&#34;b = &#34;, b) print(&#34;f(31337) = &#34;, f(31337)) print(&#34;f(f(31337)) = &#34;, f(f(31337))) file 2: output.txt
-a = 7904681699700731398014734140051852539595806699214201704996640156917030632322659247608208994194840235514587046537148300460058962186080655943804500265088604049870276334033409850015651340974377752209566343260236095126079946537115705967909011471361527517536608234561184232228641232031445095605905800675590040729 b = 16276123569406561065481657801212560821090379741833362117064628294630146690975007397274564762071994252430611109538448562330994891595998956302505598671868738461167036849263008183930906881997588494441620076078667417828837239330797541019054284027314592321358909551790371565447129285494856611848340083448507929914 f(31337) = 52926479498929750044944450970022719277159248911867759992013481774911823190312079157541825423250020665153531167070545276398175787563829542933394906173782217836783565154742242903537987641141610732290449825336292689379131350316072955262065808081711030055841841406454441280215520187695501682433223390854051207100 f(f(31337)) = 65547980822717919074991147621216627925232640728803041128894527143789172030203362875900831296779973655308791371486165705460914922484808659375299900737148358509883361622225046840011907835671004704947767016613458301891561318029714351016012481309583866288472491239769813776978841785764693181622804797533665463949 Understanding tadpole.</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-06">2022-08-06</time></span></div><div class="content"><h1 id="tadpole-corctf-2022-writeups">Tadpole corctf 2022 writeups</h1>
+<p>we were given two files</p>
+<p>file 1: tadpole.py</p>
+<pre tabindex="0"><code>from Crypto.Util.number import bytes_to_long, isPrime
+from secrets import randbelow
+
+p = bytes_to_long(open(&#34;flag.txt&#34;, &#34;rb&#34;).read())
+assert isPrime(p)
+
+a = randbelow(p)
+b = randbelow(p)
+
+def f(s):
+    return (a * s + b) % p
+
+print(&#34;a = &#34;, a)
+print(&#34;b = &#34;, b)
+print(&#34;f(31337) = &#34;, f(31337))
+print(&#34;f(f(31337)) = &#34;, f(f(31337)))
+</code></pre><p>file 2: output.txt</p>
+<pre tabindex="0"><code>a =  7904681699700731398014734140051852539595806699214201704996640156917030632322659247608208994194840235514587046537148300460058962186080655943804500265088604049870276334033409850015651340974377752209566343260236095126079946537115705967909011471361527517536608234561184232228641232031445095605905800675590040729
+b =  16276123569406561065481657801212560821090379741833362117064628294630146690975007397274564762071994252430611109538448562330994891595998956302505598671868738461167036849263008183930906881997588494441620076078667417828837239330797541019054284027314592321358909551790371565447129285494856611848340083448507929914
+f(31337) =  52926479498929750044944450970022719277159248911867759992013481774911823190312079157541825423250020665153531167070545276398175787563829542933394906173782217836783565154742242903537987641141610732290449825336292689379131350316072955262065808081711030055841841406454441280215520187695501682433223390854051207100
+f(f(31337)) =  65547980822717919074991147621216627925232640728803041128894527143789172030203362875900831296779973655308791371486165705460914922484808659375299900737148358509883361622225046840011907835671004704947767016613458301891561318029714351016012481309583866288472491239769813776978841785764693181622804797533665463949
+</code></pre><h2 id="understanding-tadpolepy">Understanding tadpole.py</h2>
+<p>I&rsquo;ll try  understanding the code line by line.</p></div><div class="post-footer">
         <a href="/posts/ctf/corctf2022/tadpole/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ctf/">ctf</a>,&nbsp;<a href="/tags/cryptography/">cryptography</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/ctf/corctf2022/jsonquiz/">Jsonquiz CorCTF 2022 writeup</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-06">2022-08-06</time></span></div><div class="content">Jsonquiz Jsonquiz CorCTF 2022 writeups We were given the link jsonquiz.be.ax.
-I googled the questions and found that they are the same as in https://quizack.com/json/questions-and-answers .
-Just searched the page for the answer.
-I opened the network inspect tool just in case.
-After i answered question 15, there was a post request with payload &ldquo;score=0&rdquo;
-I copied the request as cUrl
-curl &lsquo;https://jsonquiz.be.ax/submit' -X POST &ndash;data-raw &lsquo;score=0&rsquo;
-change it to:</div><div class="post-footer">
-        <a href="/posts/ctf/corctf2022/jsonquiz/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/json/">json</a>,&nbsp;<a href="/tags/ctf/">ctf</a>,&nbsp;<a href="/tags/misc/">misc</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/tryhackme/red-team-recon/">Red Team Recon TryHackMe Writeups</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>James S</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-04">2022-08-04</time></span></div><div class="content">This is a writeup for the room Red Team Recon on tryhackme here Built-in Tools When was thmredteam.com created (registered)? (YYYY-MM-DD)
-2021-09-24, got from whois. To how many IPv4 addresses does clinic.thmredteam.com resolve?
-2, got from dig. To how many IPv6 addresses does clinic.thmredteam.com resolve?
-2, got from dig with -6 flag. Advanced Searching How would you search using Google for xls indexed for http://clinic.thmredteam.com?
-filetype:xls site:clinic.thmredteam.com How would you search using Google for files with the word passwords for http://clinic.</div><div class="post-footer">
-        <a href="/posts/tryhackme/red-team-recon/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/tryhackme/">tryhackme</a>,&nbsp;<a href="/tags/dns/">DNS</a></div></div>
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ctf/">Ctf</a>,&nbsp;<a href="/tags/cryptography/">Cryptography</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

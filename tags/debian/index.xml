@@ -1,18 +1,26 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>debian - Tag - Arcvjs&#39;s blog</title>
+        <title>Debian - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/debian/</link>
-        <description>debian - Tag - Arcvjs&#39;s blog</description>
+        <description>Debian - Tag - Arcvjs&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/debian/" rel="self" type="application/rss+xml" /><item>
     <title>Proxy Server</title>
     <link>https://arcvjs.github.io/posts/networking/proxy-server/</link>
     <pubDate>Tue, 31 Oct 2023 11:00:04 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/proxy-server/</guid>
-    <description><![CDATA[How to isntall &amp; do simple configuration of Squid&rsquo;s Proxy server on linux Installing squid sudo apt update -y &amp;&amp; sudo apt install squid first we install the squid proxy application. and all of its dependencies.
-Configuring the proxy server the configuration file is located in /etc/squid/squid.conf we can edit it using nano
-sudo nano /etc/squid/squid.conf now we need to allow http, as the default configuration forbid it.
-http_access allow all change deny to allow.]]></description>
+    <description><![CDATA[<h1 id="how-to-isntall--do-simple-configuration-of-squids-proxy-server-on-linux">How to isntall &amp; do simple configuration of Squid&rsquo;s Proxy server on linux</h1>
+<h2 id="installing-squid">Installing squid</h2>
+<pre tabindex="0"><code>sudo apt update -y &amp;&amp; sudo apt install squid
+</code></pre><p>first we install the squid proxy application.
+and all of its dependencies.</p>
+<h2 id="configuring-the-proxy-server">Configuring the proxy server</h2>
+<p>the configuration file is located in /etc/squid/squid.conf
+we can edit it using nano</p>
+<pre tabindex="0"><code>sudo nano /etc/squid/squid.conf
+</code></pre><p>now we need to allow http, as the default configuration forbid it.</p>
+<pre tabindex="0"><code>http_access allow all
+</code></pre><p>change deny to allow.</p>]]></description>
 </item>
 </channel>
 </rss>

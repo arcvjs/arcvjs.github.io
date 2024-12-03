@@ -9,9 +9,19 @@
     <pubDate>Sun, 02 Oct 2022 10:45:34 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/picogym/mind-your-ps-and-qs/</guid>
-    <description><![CDATA[Mind Your Ps and Qs picoGym writeup. Challenges In RSA, a small e value can be problematic, but what about N? Can you decrypt this?
-File given: values
-values: c= 8533139361076999596208540806559574687666062896040360148742851107661304651861689 n= 769457290801263793712740792519696786147248001937382943813345728685422050738403253 e= 65537 Explaination RSA is an asymmetric cryptographic algorithm. It is called asymmetric because there are 2 keys. Public key are used to encrypt the clear text. Private key on the other hand are used to decrypt the encrypted text.]]></description>
+    <description><![CDATA[<h1 id="mind-your-ps-and-qs-picogym-writeup">Mind Your Ps and Qs picoGym writeup.</h1>
+<h2 id="challenges">Challenges</h2>
+<p>In RSA, a small e value can be problematic, but what about N? Can you decrypt this?</p>
+<p>File given: values</p>
+<h3 id="values">values:</h3>
+<pre tabindex="0"><code>c= 8533139361076999596208540806559574687666062896040360148742851107661304651861689
+n= 769457290801263793712740792519696786147248001937382943813345728685422050738403253
+e= 65537
+</code></pre><h2 id="explaination">Explaination</h2>
+<p>RSA is an asymmetric cryptographic algorithm.
+It is called asymmetric because there are 2 keys.
+Public key are used to encrypt the clear text.
+Private key on the other hand are used to decrypt the encrypted text.</p>]]></description>
 </item>
 </channel>
 </rss>

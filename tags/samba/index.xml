@@ -1,20 +1,28 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>samba - Tag - Arcvjs&#39;s blog</title>
+        <title>Samba - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/samba/</link>
-        <description>samba - Tag - Arcvjs&#39;s blog</description>
+        <description>Samba - Tag - Arcvjs&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 20 Feb 2024 08:11:12 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/samba/" rel="self" type="application/rss+xml" /><item>
     <title>File Server</title>
     <link>https://arcvjs.github.io/posts/networking/file-server/</link>
     <pubDate>Tue, 20 Feb 2024 08:11:12 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/file-server/</guid>
-    <description><![CDATA[How to setup file server on Debian / Ubuntu based distribution. Intalling Samba. Pertama kita mulai dengan menginstall samba menggunakan apt, sebelum itu update dan upgrade apt terlebih dulu.
-sudo apt update &amp;&amp; sudo apt upgrade lalu&hellip;
-sudo apt install samba tunggu hingga terinstall.
-Buat folder share ( Samba) Selanjutnya kita buat folder Sambda yang untuk di share.
-sudo mkdir -p /var/samba/public lalu ubah permission dari folder tersebut.
-sudo chmod 777 /var/samba/public Konfigurasi samba.]]></description>
+    <description><![CDATA[<h1 id="how-to-setup-file-server-on-debian--ubuntu-based-distribution">How to setup file server on Debian / Ubuntu based distribution.</h1>
+<h2 id="intalling-samba">Intalling Samba.</h2>
+<p>Pertama kita mulai dengan menginstall samba menggunakan apt, sebelum itu update dan upgrade apt terlebih dulu.</p>
+<pre tabindex="0"><code>sudo apt update &amp;&amp; sudo apt upgrade
+</code></pre><p>lalu&hellip;</p>
+<pre tabindex="0"><code>sudo apt install samba
+</code></pre><p>tunggu hingga terinstall.</p>
+<h2 id="buat-folder-share--samba">Buat folder share ( Samba)</h2>
+<p>Selanjutnya kita buat folder Sambda yang untuk di share.</p>
+<pre tabindex="0"><code>sudo mkdir -p /var/samba/public
+</code></pre><p>lalu ubah permission dari folder tersebut.</p>
+<pre tabindex="0"><code>sudo chmod 777 /var/samba/public
+</code></pre><h2 id="konfigurasi-samba">Konfigurasi samba.</h2>
+<p>ubah isi dari file /etc/samba/smb.conf</p>]]></description>
 </item>
 </channel>
 </rss>

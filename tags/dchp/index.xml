@@ -1,19 +1,35 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>dchp - Tag - Arcvjs&#39;s blog</title>
+        <title>Dchp - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/dchp/</link>
-        <description>dchp - Tag - Arcvjs&#39;s blog</description>
+        <description>Dchp - Tag - Arcvjs&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 10 Oct 2023 08:12:15 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/dchp/" rel="self" type="application/rss+xml" /><item>
     <title>DHCP Server configuration di linux</title>
     <link>https://arcvjs.github.io/posts/networking/dhcp-server/</link>
     <pubDate>Tue, 10 Oct 2023 08:12:15 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/networking/dhcp-server/</guid>
-    <description><![CDATA[Cara konfigurasi DHCP Server di linux dalam tutorial ini, saya akan menjelaskan cara konfigurasi dchp server di debian linux. Saaya akan menggunakan isc-dhcp-server.
-Installasi isc-dhcp-server Untuk menginstall isc-dhcp-server, saya akan menggunakan apt:
-sudo apt-get update sudo apt-uget install isc-dhcp-server Konfigurasi gunakan command ini untuk mengubah file konfigurasi:
-sudo nano /etc/dhcp/dhcpd.conf berikut contoh konfigurasi
-subnet 192.168.1.0 netmask 255.255.255.0 { range 192.168.1.100 192.168.1.200; option routers 192.168.1.1; option domain-name-servers 8.8.8.8, 8.8.4.4; option subnet-mask 255.]]></description>
+    <description><![CDATA[<h1 id="cara-konfigurasi-dhcp-server-di-linux">Cara konfigurasi DHCP Server di linux</h1>
+<p>dalam tutorial ini, saya akan menjelaskan cara konfigurasi dchp server di debian linux.
+Saaya akan menggunakan isc-dhcp-server.</p>
+<h2 id="installasi-isc-dhcp-server">Installasi isc-dhcp-server</h2>
+<p>Untuk menginstall isc-dhcp-server, saya akan menggunakan apt:</p>
+<pre tabindex="0"><code>sudo apt-get update
+sudo apt-uget install isc-dhcp-server
+</code></pre><h2 id="konfigurasi">Konfigurasi</h2>
+<p>gunakan command ini untuk mengubah file konfigurasi:</p>
+<pre tabindex="0"><code>sudo nano /etc/dhcp/dhcpd.conf
+</code></pre><p>berikut contoh konfigurasi</p>
+<pre tabindex="0"><code>subnet 192.168.1.0 netmask 255.255.255.0 {
+    range 192.168.1.100 192.168.1.200;
+    option routers 192.168.1.1;
+    option domain-name-servers 8.8.8.8, 8.8.4.4;
+    option subnet-mask 255.255.255.0;
+    option broadcast-address 192.168.1.255;
+    default-lease-time 600;
+    max-lease-time 7200;
+}
+</code></pre><p>setelah itu kita perlu mengubah dafault interface di file /etc/default/isc-dhcp-server</p>]]></description>
 </item>
 </channel>
 </rss>

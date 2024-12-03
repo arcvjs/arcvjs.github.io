@@ -1,19 +1,26 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>tryhackme - Tag - Arcvjs&#39;s blog</title>
+        <title>Tryhackme - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/tryhackme/</link>
-        <description>tryhackme - Tag - Arcvjs&#39;s blog</description>
+        <description>Tryhackme - Tag - Arcvjs&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 04 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/tryhackme/" rel="self" type="application/rss+xml" /><item>
     <title>Red Team Recon TryHackMe Writeups</title>
     <link>https://arcvjs.github.io/posts/tryhackme/red-team-recon/</link>
     <pubDate>Thu, 04 Aug 2022 00:00:00 &#43;0000</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/tryhackme/red-team-recon/</guid>
-    <description><![CDATA[This is a writeup for the room Red Team Recon on tryhackme here Built-in Tools When was thmredteam.com created (registered)? (YYYY-MM-DD)
-2021-09-24, got from whois. To how many IPv4 addresses does clinic.thmredteam.com resolve?
-2, got from dig. To how many IPv6 addresses does clinic.thmredteam.com resolve?
-2, got from dig with -6 flag. Advanced Searching How would you search using Google for xls indexed for http://clinic.thmredteam.com?
-filetype:xls site:clinic.thmredteam.com How would you search using Google for files with the word passwords for http://clinic.]]></description>
+    <description><![CDATA[<h3 id="this-is-a-writeup-for-the-room-red-team-recon-on-tryhackme-herehttpstryhackmecomroomredteamrecon">This is a writeup for the room Red Team Recon on tryhackme <a href="https://tryhackme.com/room/redteamrecon" target="_blank" rel="noopener noreffer ">here</a></h3>
+<h2 id="built-in-tools">Built-in Tools</h2>
+<p>When was thmredteam.com created (registered)? (YYYY-MM-DD)</p>
+<pre tabindex="0"><code>2021-09-24, got from whois.
+</code></pre><p>To how many IPv4 addresses does clinic.thmredteam.com resolve?</p>
+<pre tabindex="0"><code>2, got from dig.
+</code></pre><p>To how many IPv6 addresses does clinic.thmredteam.com resolve?</p>
+<pre tabindex="0"><code>2, got from dig with -6 flag.
+</code></pre><h2 id="advanced-searching">Advanced Searching</h2>
+<p>How would you search using Google for xls indexed for <a href="http://clinic.thmredteam.com" target="_blank" rel="noopener noreffer ">http://clinic.thmredteam.com</a>?</p>
+<pre tabindex="0"><code>filetype:xls site:clinic.thmredteam.com
+</code></pre><p>How would you search using Google for files with the word passwords for <a href="http://clinic.thmredteam.com" target="_blank" rel="noopener noreffer ">http://clinic.thmredteam.com</a>?</p>]]></description>
 </item>
 </channel>
 </rss>

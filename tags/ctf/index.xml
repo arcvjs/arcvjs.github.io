@@ -1,15 +1,28 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>ctf - Tag - Arcvjs&#39;s blog</title>
+        <title>Ctf - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/ctf/</link>
-        <description>ctf - Tag - Arcvjs&#39;s blog</description>
+        <description>Ctf - Tag - Arcvjs&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 20 Aug 2022 09:46:34 &#43;0700</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/ctf/" rel="self" type="application/rss+xml" /><item>
     <title>Postman CryptoburstCTF 2022 writeup</title>
     <link>https://arcvjs.github.io/posts/ctf/cryptoburst/postman/</link>
     <pubDate>Sat, 20 Aug 2022 09:46:34 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/ctf/cryptoburst/postman/</guid>
-    <description><![CDATA[Postman - cryptoburst ctf 2022 writeups we were given the image first i tried searching for postman qr. Found no result. then, i tried reverse searching with google images. i found a similar images, from a website explaining types of barcode. https://www.dynamsoft.com/blog/insights/the-comprehensive-guide-to-1d-and-2d-barcodes/ the name of the barcodes are MaxiCode. It was used by UPS so the name Postman makes sense. Now it just comes down to reading the qr. After some browsing i found an online tool for reading.]]></description>
+    <description><![CDATA[<h3 id="postman---cryptoburst-ctf-2022-writeups">Postman - cryptoburst ctf 2022 writeups</h3>
+<p>we were given the image
+</p>
+<p>first i tried searching for postman qr.
+Found no result.
+then, i tried reverse searching with google images.
+i found a similar images, from a website explaining types of barcode.
+<a href="https://www.dynamsoft.com/blog/insights/the-comprehensive-guide-to-1d-and-2d-barcodes/" target="_blank" rel="noopener noreffer ">https://www.dynamsoft.com/blog/insights/the-comprehensive-guide-to-1d-and-2d-barcodes/</a>
+the name of the barcodes are MaxiCode.
+It was used by UPS so the name Postman makes sense.
+Now it just comes down to reading the qr.
+After some browsing i found an online tool for reading.
+<a href="https://products.conholdate.app/barcode/recognize/maxicode" target="_blank" rel="noopener noreffer ">https://products.conholdate.app/barcode/recognize/maxicode</a>
+here&rsquo;s the result:</p>]]></description>
 </item>
 <item>
     <title>Ook What Am I Looking At CryptoburstCTF 2022 writeup</title>
@@ -17,8 +30,13 @@
     <pubDate>Sat, 20 Aug 2022 09:18:49 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/ctf/cryptoburst/ook-what-am-i-looking-at/</guid>
-    <description><![CDATA[Ook What Am I Looking At - cryptoburst ctf 2022 We were given the string
-. . . . . . . . . . . . . . . . . . . . ! ? . ? . . . ? . . . . . . . ? . . . . . . . . . . . . . . . ? . . . .]]></description>
+    <description><![CDATA[<h3 id="ook-what-am-i-looking-at---cryptoburst-ctf-2022">Ook What Am I Looking At - cryptoburst ctf 2022</h3>
+<p>We were given the string</p>
+<pre tabindex="0"><code>. . . . . . . . . . . . . . . . . . . . ! ? . ? . . . ? . . . . . . . ? . . . . . . . . . . . . . . . ? . . . . . . . . . . . . . . . . . . . . ? . ? . ? . ? . ! ! ? ! . ? . ? . ? ! ! ! ! ! ! ! . . ? . . . . . . . . . . . . . . . . . . . . . . ! . ! ! ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . ! . ! ! ! . . . . . . . . . . . ! . ? . ? . . . . . . . ! . ! ! ! . . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . ? . ? . ! . . ? . ? . . . . . . ! . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? ! ! ! ! ! ! ! ! ! . ! ! ! ! ! ! ! ! ! ! ! . ? . ? . . . . . . . . . . . . . . . ! . . ? . ? . . . . . . . . . . . . ! . ? . ? . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . ? . ? ! ! ! . ! ! ! ! ! ! ! ! ! . ? . ? . ! . . ? . . ! . ! ! ! . . . . . . . ! . ? . ! . . ? . ? . . . . . . . . . . . . . . . . ! . ? . ! ! ! ! ! ! ! . . ? ! ! ! ! ! ! ! ! ! . ? . ? . ! . . ? . . . . . . . . . . . . . . . . ! . . ? . . ! . ? . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? . . . . . . . . . . . . . . . . . . ! . . ? ! ! ! ! ! ! ! ! ! . . ? ! ! ! ! ! . ? . ! . ? . ? . . . . . . . . . . . . . . . ! . . ? . ? . ? . . ! . ? . ? . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? . ? . ? . . . . . . . . . . . . ! . ? . . . . . . . . . . . . . . . . . . . . . ! . . ? ! ! ! ! ! ! ! ! ! . ? . . . . . . . ! . ? . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? . ? ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . ! . ? . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . . ? . . . . . . . . . . . . . . . . . . ! . ! ! ! . . . ! . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . ? . ? . . . . . . . . . . . . ! . ? . . . . . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! . ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . . . . . . . . . . . . . . . . . ! . . . . . ! . . ? ! ! ! ! ! ! ! ! ! ! ! . ? . ! ! ! ! ! ! ! ! ! . ! ! ! ! ! ! ! ! ! ! ! ! ! . . ? ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! . ? . . . . . . . . . . . . . ! . ! ! ! ! ! ! ! ! ! ! ! ! ! . . ? ! . . . . . . . . . . . . . . . . . . . . . . . . . ! . ? . ! . . . . . . . . . . . . . . . ! . . . . . . . . . . . . . ! . ? . ! ! ! ! ! ! ! ! ! ! ! ! ! . . ? ! ! ! ! ! ! ! ! ! ! ! . . ? . . . . . . . . ! .
+</code></pre><p>The first thing i notice is the name challenge.
+Ook were out of its place.
+i tried searching Ook Chipher
+but i found none.</p>]]></description>
 </item>
 <item>
     <title>Tadpole CorCTF 2022 writeup</title>
@@ -26,10 +44,32 @@
     <pubDate>Sat, 06 Aug 2022 13:18:38 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/ctf/corctf2022/tadpole/</guid>
-    <description><![CDATA[Tadpole corctf 2022 writeups we were given two files
-file 1: tadpole.py
-from Crypto.Util.number import bytes_to_long, isPrime from secrets import randbelow p = bytes_to_long(open(&#34;flag.txt&#34;, &#34;rb&#34;).read()) assert isPrime(p) a = randbelow(p) b = randbelow(p) def f(s): return (a * s + b) % p print(&#34;a = &#34;, a) print(&#34;b = &#34;, b) print(&#34;f(31337) = &#34;, f(31337)) print(&#34;f(f(31337)) = &#34;, f(f(31337))) file 2: output.txt
-a = 7904681699700731398014734140051852539595806699214201704996640156917030632322659247608208994194840235514587046537148300460058962186080655943804500265088604049870276334033409850015651340974377752209566343260236095126079946537115705967909011471361527517536608234561184232228641232031445095605905800675590040729 b = 16276123569406561065481657801212560821090379741833362117064628294630146690975007397274564762071994252430611109538448562330994891595998956302505598671868738461167036849263008183930906881997588494441620076078667417828837239330797541019054284027314592321358909551790371565447129285494856611848340083448507929914 f(31337) = 52926479498929750044944450970022719277159248911867759992013481774911823190312079157541825423250020665153531167070545276398175787563829542933394906173782217836783565154742242903537987641141610732290449825336292689379131350316072955262065808081711030055841841406454441280215520187695501682433223390854051207100 f(f(31337)) = 65547980822717919074991147621216627925232640728803041128894527143789172030203362875900831296779973655308791371486165705460914922484808659375299900737148358509883361622225046840011907835671004704947767016613458301891561318029714351016012481309583866288472491239769813776978841785764693181622804797533665463949 Understanding tadpole.]]></description>
+    <description><![CDATA[<h1 id="tadpole-corctf-2022-writeups">Tadpole corctf 2022 writeups</h1>
+<p>we were given two files</p>
+<p>file 1: tadpole.py</p>
+<pre tabindex="0"><code>from Crypto.Util.number import bytes_to_long, isPrime
+from secrets import randbelow
+
+p = bytes_to_long(open(&#34;flag.txt&#34;, &#34;rb&#34;).read())
+assert isPrime(p)
+
+a = randbelow(p)
+b = randbelow(p)
+
+def f(s):
+    return (a * s + b) % p
+
+print(&#34;a = &#34;, a)
+print(&#34;b = &#34;, b)
+print(&#34;f(31337) = &#34;, f(31337))
+print(&#34;f(f(31337)) = &#34;, f(f(31337)))
+</code></pre><p>file 2: output.txt</p>
+<pre tabindex="0"><code>a =  7904681699700731398014734140051852539595806699214201704996640156917030632322659247608208994194840235514587046537148300460058962186080655943804500265088604049870276334033409850015651340974377752209566343260236095126079946537115705967909011471361527517536608234561184232228641232031445095605905800675590040729
+b =  16276123569406561065481657801212560821090379741833362117064628294630146690975007397274564762071994252430611109538448562330994891595998956302505598671868738461167036849263008183930906881997588494441620076078667417828837239330797541019054284027314592321358909551790371565447129285494856611848340083448507929914
+f(31337) =  52926479498929750044944450970022719277159248911867759992013481774911823190312079157541825423250020665153531167070545276398175787563829542933394906173782217836783565154742242903537987641141610732290449825336292689379131350316072955262065808081711030055841841406454441280215520187695501682433223390854051207100
+f(f(31337)) =  65547980822717919074991147621216627925232640728803041128894527143789172030203362875900831296779973655308791371486165705460914922484808659375299900737148358509883361622225046840011907835671004704947767016613458301891561318029714351016012481309583866288472491239769813776978841785764693181622804797533665463949
+</code></pre><h2 id="understanding-tadpolepy">Understanding tadpole.py</h2>
+<p>I&rsquo;ll try  understanding the code line by line.</p>]]></description>
 </item>
 <item>
     <title>Jsonquiz CorCTF 2022 writeup</title>
@@ -37,14 +77,16 @@ a = 7904681699700731398014734140051852539595806699214201704996640156917030632322
     <pubDate>Sat, 06 Aug 2022 11:07:52 &#43;0700</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/ctf/corctf2022/jsonquiz/</guid>
-    <description><![CDATA[Jsonquiz Jsonquiz CorCTF 2022 writeups We were given the link jsonquiz.be.ax.
-I googled the questions and found that they are the same as in https://quizack.com/json/questions-and-answers .
-Just searched the page for the answer.
-I opened the network inspect tool just in case.
-After i answered question 15, there was a post request with payload &ldquo;score=0&rdquo;
-I copied the request as cUrl
-curl &lsquo;https://jsonquiz.be.ax/submit' -X POST &ndash;data-raw &lsquo;score=0&rsquo;
-change it to:]]></description>
+    <description><![CDATA[<h1 id="jsonquiz">Jsonquiz</h1>
+<h3 id="jsonquiz-corctf-2022-writeups">Jsonquiz CorCTF 2022 writeups</h3>
+<p>We were given the link <a href="https://jsonquiz.be.ax/" target="_blank" rel="noopener noreffer ">jsonquiz.be.ax</a>.</p>
+<p>I googled the questions and found that they are the same as in <a href="https://quizack.com/json/questions-and-answers" target="_blank" rel="noopener noreffer ">https://quizack.com/json/questions-and-answers</a> .</p>
+<p>Just searched the page for the answer.</p>
+<p>I opened the network inspect tool just in case.</p>
+<p>After i answered question 15, there was a post request with payload &ldquo;score=0&rdquo;</p>
+<p>I copied the request as cUrl</p>
+<blockquote>
+<p>curl &lsquo;<a href="https://jsonquiz.be.ax/submit%27" target="_blank" rel="noopener noreffer ">https://jsonquiz.be.ax/submit'</a> -X POST &ndash;data-raw &lsquo;score=0&rsquo;</p>]]></description>
 </item>
 </channel>
 </rss>

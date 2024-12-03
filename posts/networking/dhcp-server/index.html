@@ -4,23 +4,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>DHCP Server configuration di linux - Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:title" content="DHCP Server configuration di linux" />
-<meta property="og:description" content="Cara konfigurasi DHCP Server di linux dalam tutorial ini, saya akan menjelaskan cara konfigurasi dchp server di debian linux. Saaya akan menggunakan isc-dhcp-server.
+        <title>DHCP Server configuration di linux - Arcvjs&#39;s blog</title><meta name="Description" content="blogs, others"><meta property="og:url" content="https://arcvjs.github.io/posts/networking/dhcp-server/">
+  <meta property="og:site_name" content="Arcvjs&#39;s blog">
+  <meta property="og:title" content="DHCP Server configuration di linux">
+  <meta property="og:description" content="Cara konfigurasi DHCP Server di linux dalam tutorial ini, saya akan menjelaskan cara konfigurasi dchp server di debian linux. Saaya akan menggunakan isc-dhcp-server.
 Installasi isc-dhcp-server Untuk menginstall isc-dhcp-server, saya akan menggunakan apt:
 sudo apt-get update sudo apt-uget install isc-dhcp-server Konfigurasi gunakan command ini untuk mengubah file konfigurasi:
 sudo nano /etc/dhcp/dhcpd.conf berikut contoh konfigurasi
-subnet 192.168.1.0 netmask 255.255.255.0 { range 192.168.1.100 192.168.1.200; option routers 192.168.1.1; option domain-name-servers 8.8.8.8, 8.8.4.4; option subnet-mask 255." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://arcvjs.github.io/posts/networking/dhcp-server/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-10-10T08:12:15+07:00" />
-<meta property="article:modified_time" content="2023-10-10T08:12:15+07:00" /><meta property="og:site_name" content="Arcvjs&#39;s site" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="DHCP Server configuration di linux"/>
-<meta name="twitter:description" content="Cara konfigurasi DHCP Server di linux dalam tutorial ini, saya akan menjelaskan cara konfigurasi dchp server di debian linux. Saaya akan menggunakan isc-dhcp-server.
+subnet 192.168.1.0 netmask 255.255.255.0 { range 192.168.1.100 192.168.1.200; option routers 192.168.1.1; option domain-name-servers 8.8.8.8, 8.8.4.4; option subnet-mask 255.255.255.0; option broadcast-address 192.168.1.255; default-lease-time 600; max-lease-time 7200; } setelah itu kita perlu mengubah dafault interface di file /etc/default/isc-dhcp-server">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-10-10T08:12:15+07:00">
+    <meta property="article:modified_time" content="2023-10-10T08:12:15+07:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Dchp">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DHCP Server configuration di linux">
+  <meta name="twitter:description" content="Cara konfigurasi DHCP Server di linux dalam tutorial ini, saya akan menjelaskan cara konfigurasi dchp server di debian linux. Saaya akan menggunakan isc-dhcp-server.
 Installasi isc-dhcp-server Untuk menginstall isc-dhcp-server, saya akan menggunakan apt:
 sudo apt-get update sudo apt-uget install isc-dhcp-server Konfigurasi gunakan command ini untuk mengubah file konfigurasi:
 sudo nano /etc/dhcp/dhcpd.conf berikut contoh konfigurasi
-subnet 192.168.1.0 netmask 255.255.255.0 { range 192.168.1.100 192.168.1.200; option routers 192.168.1.1; option domain-name-servers 8.8.8.8, 8.8.4.4; option subnet-mask 255."/>
+subnet 192.168.1.0 netmask 255.255.255.0 { range 192.168.1.100 192.168.1.200; option routers 192.168.1.1; option domain-name-servers 8.8.8.8, 8.8.4.4; option subnet-mask 255.255.255.0; option broadcast-address 192.168.1.255; default-lease-time 600; max-lease-time 7200; } setelah itu kita perlu mengubah dafault interface di file /etc/default/isc-dhcp-server">
 <meta name="application-name" content="Arcvjs&#39;s blog">
 <meta name="apple-mobile-web-app-title" content="Arcvjs&#39;s blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -170,7 +176,7 @@ sudo apt-uget install isc-dhcp-server
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/dchp/">dchp</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/dchp/">Dchp</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

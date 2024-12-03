@@ -1,15 +1,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>others - Tag - Arcvjs&#39;s blog</title>
+        <title>Others - Tag - Arcvjs&#39;s blog</title>
         <link>https://arcvjs.github.io/tags/others/</link>
-        <description>others - Tag - Arcvjs&#39;s blog</description>
+        <description>Others - Tag - Arcvjs&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 28 Jul 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://arcvjs.github.io/tags/others/" rel="self" type="application/rss+xml" /><item>
     <title>First Blog</title>
     <link>https://arcvjs.github.io/posts/first-blog/</link>
     <pubDate>Thu, 28 Jul 2022 00:00:00 &#43;0000</pubDate>
     <author>James S</author>
     <guid>https://arcvjs.github.io/posts/first-blog/</guid>
-    <description><![CDATA[Welcome, to my blog. This blog will be used for writeups and many more. I&rsquo;m using this for personal documentation. Enjoy.]]></description>
+    <description><![CDATA[<p>Welcome, to my blog.
+This blog will be used for writeups and many more.
+I&rsquo;m using this for personal documentation.
+Enjoy.</p>]]></description>
 </item>
 </channel>
 </rss>
